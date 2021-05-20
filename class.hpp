@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.cpp                                           :+:      :+:    :+:   */
+/*   class.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/20 13:22:43 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/20 15:25:20 by zdnaya           ###   ########.fr       */
+/*   Created: 2021/05/20 15:39:23 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/05/20 16:04:45 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#ifndef CLASS_HPP
+# define CLASS_HPP
 
+class Bla {
 
+    public:
+        Bla(void);
+        ~Bla(void);
+};
 
-int main()
-{
-    char s[10];
-
-    std::cout << "Hello";
-    std::cin >> s;
-    std::cout << "Hello " << s << std::endl;
-    return 0;
-}
+#endif 

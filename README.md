@@ -1,12 +1,10 @@
 # C++Module-00
 This repository Contains an Introduction to C++
 
-# iostream Library 
+# Iostream Library (Standard Input / Output Streams Library)
 
     cin: Standard input stream (object )
     cout: Standard output stream (object )
-
-
 
 # Ressources 
 
