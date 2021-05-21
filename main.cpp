@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   class.hpp                                          :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/20 15:39:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/21 10:17:50 by zdnaya           ###   ########.fr       */
+/*   Created: 2021/05/21 10:08:25 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/05/21 10:40:26 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLASS_HPP
-# define CLASS_HPP
+#include <iostream>
+#include "class.hpp"
 
-class Bla {
+int main(){
 
-    public:
-        int foo;
-        Bla(void);
-        ~Bla(void);
-        void tes(void);
-};
+    Bla instance;
 
-#endif 
+    instance.foo = 42;
+
+    std::cout << "foo : " << instance.foo << std::endl;
+
+    instance.tes();
+    return 0;  
+}
