@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 10:08:25 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/21 10:40:26 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/21 11:51:10 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main(){
 
-    Bla instance;
+    Bla instance(3,9.23,'w');
 
     instance.foo = 42;
 

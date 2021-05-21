@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   class.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:39:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/21 10:17:50 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/21 11:50:01 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,11 @@ class Bla {
 
     public:
         int foo;
-        Bla(void);
+        int a;
+        float b;
+        char c;
+        
+        Bla(int p1,float p2,char p3);
         ~Bla(void);
         void tes(void);
 };
