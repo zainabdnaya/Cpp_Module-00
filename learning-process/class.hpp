@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:39:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/22 14:47:58 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/22 16:17:01 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ public:
     int getbla(void) const;
     void setbla(int v);
     void tes(void) const;
+    int comapre(Bla *blaa) const;
 
 private:
     int _foo;
 
     void _tes(void) const;
 };
-//structure  
 struct test
 {
 

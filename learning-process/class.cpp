@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:39:20 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/22 14:52:12 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/22 15:10:05 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,12 @@ void Bla::setbla(int v){
     if ( v >= 0)
         this->_foo = v;
     return;
+}
+
+int Bla::comapre(Bla *blaa)const{
+    if ( this->_foo < blaa->getbla())
+        return (-1);
+    else if ( this->_foo > blaa->getbl())
+        return (1);
+    return (0);
 }
