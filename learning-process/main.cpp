@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 10:08:25 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/22 14:05:25 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/22 14:52:01 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@ int main(){
 
     Bla instance;
 
-    instance.foo = 42;
-
-    std::cout << "foo : " << instance.foo << std::endl;
-    
-    // instance.tes();
-    // instance.tes();
+    instance.setbla(-42);
+    std::cout << "foo : " << instance.getbla() << std::endl;
+    instance.setbla(42);
+    std::cout << "foo : " << instance.getbla() << std::endl;
     return 0;  
 }

@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:39:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/22 14:26:04 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/22 14:47:58 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ public:
     char c;
     Bla(void);
     ~Bla(void);
+    int getbla(void) const;
+    void setbla(int v);
     void tes(void) const;
 
 private:
@@ -31,16 +33,13 @@ private:
     void _tes(void) const;
 };
 //structure  
-struct Bla
+struct test
 {
 
     int foo;
     int a;
     float b;
     char c;
-    Bla(void);
-    ~Bla(void);
-    void tes(void) const;
 };
 
 #endif
