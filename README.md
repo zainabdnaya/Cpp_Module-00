@@ -17,6 +17,11 @@ A destructor is a special member function of a class that is executed
 whenever an object of it's class goes out of scope or whenever the delete 
 expression is applied to a pointer to the object of that class.
 
+# Class VS Struct in C++
+
+ The only difference between a struct and class in C++ is the default accessibility 
+ of member variables and methods. 
+ In a struct they are public; in a class they are private.
 # Ressources 
 
     best first exemple about C++:
