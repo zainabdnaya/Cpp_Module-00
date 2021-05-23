@@ -25,7 +25,7 @@ This repository Contains an Introduction to C++
  In a struct they are public; in a class they are private.
 
  # getline (string) in C++
-    https://www.geeksforgeeks.org/getline-string-c/#:~:text=The%20C%2B%2B%20getline()%20is,the%20delimiting%20character%20is%20encountered.
+    https://www.geeksforgeeks.org/getline-string-c/
 
 # Ressources 
 
