@@ -6,12 +6,14 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:39:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/22 16:17:01 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/23 12:33:23 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CLASS_HPP
 #define CLASS_HPP
+
+#include <iostream>
 
 class Bla
 {

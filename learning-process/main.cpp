@@ -6,11 +6,10 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 10:08:25 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/22 14:52:01 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/23 12:33:30 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "class.hpp"
 
 int main(){
