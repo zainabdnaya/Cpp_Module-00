@@ -6,17 +6,17 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:31:26 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/23 18:25:27 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/23 18:58:20 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PH_BOOK
 #define PH_BOOK
-
 #include <iostream>
 #include <iomanip>
 #include <string>
 #include <sstream>
+#include <cstring>
 
 class contact
 {
