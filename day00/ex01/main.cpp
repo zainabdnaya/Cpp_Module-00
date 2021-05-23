@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:35:04 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/23 18:40:17 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/23 18:50:15 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int in_range(int k, int i)
     int m;
 
     m = 0;
+
     if (k < 0 || k >= 8)
         return (0);
     while (m < i)
@@ -52,7 +53,7 @@ int main()
 
     i = 0;
     k = 0;
-    std::cout << "Welcome to your crappy phone_book:" << std::endl;
+    std::cout << "\t\t\tWelcome to your crappy phone_book" << std::endl;
     while (1)
     {
         std::cout << "Phon_Book:";
@@ -69,13 +70,18 @@ int main()
         }
         if (str == "SEARCH")
         {
-            Contact->print(Contact, i);
-            std::cout << "You May enter an Index for more Details:";
-            std::getline(std::cin, str);
-            if (in_range(stoi(str), i) == 0)
+            if (i == 0)
+                std::cout << "Contact is Empty!" << std::endl;
+            else
+            {
+                Contact->print(Contact, i);
+                std::cout << "You May enter an Index for more Details:";
+                std::getline(std::cin, str);
+                if (in_range(stoi(str), i) == 0)
                     std::cout << "Index Not Found!" << std::endl;
-            else 
-                Contact->print_all(Contact, stoi(str));
+                else
+                    Contact->print_all(Contact, stoi(str));
+            }
             std::getline(std::cin, str);
         }
         if (str == "EXIT")

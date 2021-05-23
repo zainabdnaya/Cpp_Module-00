@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:33:39 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/23 18:21:50 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/23 18:49:18 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ contact::~contact(void)
 void contact::print(contact *con, int i)
 {
     int j = 0;
+
     while (j < i)
     {
         std::cout << std::to_string(j) << std::setw(10);
