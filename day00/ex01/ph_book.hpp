@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:31:26 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/24 12:47:37 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/24 13:34:35 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,14 @@
 #include <sstream>
 #include <cstring>
 #include <cctype>
+
+/*colors*/
+#define RESET "\033[0m"
+#define BOLDRED "\033[1m\033[31m"     /* Bold Red */
+#define BOLDYELLOW "\033[1m\033[33m"  /* Bold Yellow */
+#define BOLDGREEN "\033[1m\033[32m"   /* Bold Green */
+
+/***/
 
 class contact
 {

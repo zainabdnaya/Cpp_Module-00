@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:35:04 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/24 13:08:37 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/24 14:16:21 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void contact::print_all(contact *co, int i)
 {
+    
     std::cout << " First Name : " + co[i].first_name << std::endl;
     std::cout << " Last name  : " + co[i].last_name << std::endl;
     // std::cout << " Nickname :" + co[i].nickname << std::endl;
@@ -60,7 +61,7 @@ int main()
         {
             if (i >= 8)
             {
-                std::cout << "Contact Full!" << std::endl;
+                std::cout << BOLDGREEN << "\t\tContact Full! 📝" << RESET << std::endl;
                 continue;
             }
             Contact->add_(Contact, i);
@@ -69,11 +70,11 @@ int main()
         if (str == "SEARCH")
         {
             if (i == 0)
-                std::cout << "Contact is Empty!" << std::endl;
+                std::cout << BOLDRED <<"\t\tContact is Empty!🗒️" << RESET<< std::endl;
             else
             {
                 Contact->print(Contact, i);
-                std::cout << "You May enter an Index for more Details: ";
+                std::cout << "Enter an Index for more Details: ";
                 std::getline(std::cin, nbr);
                 while (nbr.length() > 1 || nbr.length() == 0)
                 {
@@ -84,18 +85,17 @@ int main()
                 if (isdigit(nbr[0]))
                 {
                     if (in_range(stoi(nbr), i) == 0)
-                        std::cout << "Index Not Found!" << std::endl;
+                        std::cout << BOLDRED << "\t\tIndex Not Found! ⛔" << RESET << std::endl;
                     else
                         Contact->print_all(Contact, stoi(nbr));
                 }
-                // else
-                //     Contact->print_all(Contact, stoi(nbr));
+                else
+                    std::cout << BOLDRED << "\t\tIndex Not Found! ⛔" << RESET << std::endl;
             }
-            std::getline(std::cin, str);
         }
         if (str == "EXIT")
         {
-            std::cout << "\t\tEXIT !";
+            std::cout << BOLDYELLOW << "\t\t 🤗 bye!bye! 👋" << RESET;
             break;
         }
     }
