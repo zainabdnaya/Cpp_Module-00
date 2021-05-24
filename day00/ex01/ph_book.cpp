@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:33:39 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/23 18:49:18 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/24 13:07:40 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,18 @@
 contact::contact(void)
 {
     j = 0;
+    // first_name.empty();
+    // last_name.empty();
+    // nickname.empty();
+    // login.empty();
+    // postal.empty();
+    // adress.empty();
+    // email_ad.empty();
+    // phone.empty();
+    // birth.empty();
+    // fv_meal.empty();
+    // under_w.empty();
+    // secret.empty();
 }
 
 contact::~contact(void)
@@ -34,7 +46,6 @@ void contact::print(contact *con, int i)
         std::cout << "|" << std::setw(10);
         std::cout << con[j].last_name;
         std::cout << std::endl;
-
         j++;
     }
 }
@@ -73,6 +84,6 @@ void contact::affect()
     // std::cout << " Darkest secret :";
     // std::getline(std::cin, this->secret);
     std::cout << "\n";
-    this->j++;
+    // this->j++;
 }
 

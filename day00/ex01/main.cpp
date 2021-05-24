@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:35:04 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/23 18:50:15 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/24 13:08:37 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,11 @@ int in_range(int k, int i)
     int m;
 
     m = 0;
-
     if (k < 0 || k >= 8)
         return (0);
     while (m < i)
     {
-        if (k != i)
+        if (k != m)
             m++;
         else
             return (1);
@@ -48,15 +47,14 @@ int main()
 {
     contact Contact[8];
     std::string str;
-    int k;
     int i;
+    std::string nbr;
 
     i = 0;
-    k = 0;
     std::cout << "\t\t\tWelcome to your crappy phone_book" << std::endl;
     while (1)
     {
-        std::cout << "Phon_Book:";
+        std::cout << "Phon_Book: ";
         std::getline(std::cin, str);
         if (str == "ADD")
         {
@@ -75,12 +73,23 @@ int main()
             else
             {
                 Contact->print(Contact, i);
-                std::cout << "You May enter an Index for more Details:";
-                std::getline(std::cin, str);
-                if (in_range(stoi(str), i) == 0)
-                    std::cout << "Index Not Found!" << std::endl;
-                else
-                    Contact->print_all(Contact, stoi(str));
+                std::cout << "You May enter an Index for more Details: ";
+                std::getline(std::cin, nbr);
+                while (nbr.length() > 1 || nbr.length() == 0)
+                {
+                    std::cout << "Error: Enter Integer from 0 to 7(no space)!" << std::endl;
+                    std::cout << "Plead Enter a valid index: ";
+                    std::getline(std::cin, nbr);
+                }
+                if (isdigit(nbr[0]))
+                {
+                    if (in_range(stoi(nbr), i) == 0)
+                        std::cout << "Index Not Found!" << std::endl;
+                    else
+                        Contact->print_all(Contact, stoi(nbr));
+                }
+                // else
+                //     Contact->print_all(Contact, stoi(nbr));
             }
             std::getline(std::cin, str);
         }

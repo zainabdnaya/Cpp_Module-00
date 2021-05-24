@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:31:26 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/23 18:58:20 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/24 12:47:37 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <string>
 #include <sstream>
 #include <cstring>
+#include <cctype>
 
 class contact
 {
