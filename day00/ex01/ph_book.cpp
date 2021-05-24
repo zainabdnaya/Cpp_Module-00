@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:33:39 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/24 16:27:46 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/24 18:23:14 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ void contact::print(contact *con, int i)
         std::cout << std::endl;
         j++;
     }
-        std::cout << con[j].last_name;
 }
 
 void contact::add_(contact *list, int index)
