@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:35:04 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/24 14:16:21 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/24 16:39:55 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 void contact::print_all(contact *co, int i)
 {
-    
-    std::cout << " First Name : " + co[i].first_name << std::endl;
-    std::cout << " Last name  : " + co[i].last_name << std::endl;
-    // std::cout << " Nickname :" + co[i].nickname << std::endl;
-    // std::cout << " Login :" + co[i].login << std::endl;
-    // std::cout << " Postal adress :" + co[i].postal << std::endl;
-    // std::cout << " Phone number :" + co[i].phone << std ::endl;
-    // std::cout << " Birthday date :" + co[i].birth << std::endl;
-    // std::cout << " Favorite meal :" + co[i].fv_meal << std::endl;
-    // std::cout << " Underwear color " + co[i].under_w << std::endl;
-    // std::cout << " Darkest secret :" + co[i].secret << std::endl;
+    std::cout << BOLDMAGENTA << "\t\tYour Phone Contact" << RESET << std::endl;
+    std::cout << BOLDWHITE <<" \tFirst Name      : " + co[i].first_name << std::endl;
+    std::cout << " \tLast name       : " + co[i].last_name << std::endl;
+    std::cout << " \tNickname        : " + co[i].nickname << std::endl;
+    std::cout << " \tLogin           : " + co[i].login << std::endl;
+    std::cout << " \tPostal adress   : " + co[i].postal << std::endl;
+    std::cout << " \tPhone number    : " + co[i].phone << std ::endl;
+    std::cout << " \tBirthday date   : " + co[i].birth << std::endl;
+    std::cout << " \tFavorite meal   : " + co[i].fv_meal << std::endl;
+    std::cout << " \tUnderwear color : " + co[i].under_w << std::endl;
+    std::cout << " \tDarkest secret  : " + co[i].secret << RESET << std::endl;
 }
 
 int in_range(int k, int i)
@@ -52,7 +52,11 @@ int main()
     std::string nbr;
 
     i = 0;
-    std::cout << "\t\t\tWelcome to your crappy phone_book" << std::endl;
+    std::cout << "\n";
+    std::cout << "\t\tWelcome to your crappy phone_book 📱" << std::endl;
+    std::cout << BLUE << "To use ur phone_book write one of the folowing commands: " << RESET;
+    std::cout << BOLDBLUE << "ADD/SEARCH/EXIT" << RESET << std::endl;
+    std::cout << "\n";
     while (1)
     {
         std::cout << "Phon_Book: ";
@@ -61,7 +65,7 @@ int main()
         {
             if (i >= 8)
             {
-                std::cout << BOLDGREEN << "\t\tContact Full! 📝" << RESET << std::endl;
+                std::cout << BOLDGREEN << "\t\tPhone_Book Full! 📝" << RESET << std::endl;
                 continue;
             }
             Contact->add_(Contact, i);
@@ -70,7 +74,7 @@ int main()
         if (str == "SEARCH")
         {
             if (i == 0)
-                std::cout << BOLDRED <<"\t\tContact is Empty!🗒️" << RESET<< std::endl;
+                std::cout << BOLDRED <<"\t\tPhone_Book is Empty!🗒️" << RESET<< std::endl;
             else
             {
                 Contact->print(Contact, i);

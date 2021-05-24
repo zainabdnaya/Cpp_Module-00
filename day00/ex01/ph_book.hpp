@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:31:26 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/24 13:34:35 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/24 16:38:43 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,18 @@
 #include <cstring>
 #include <cctype>
 
-/*colors*/
 #define RESET "\033[0m"
-#define BOLDRED "\033[1m\033[31m"     /* Bold Red */
-#define BOLDYELLOW "\033[1m\033[33m"  /* Bold Yellow */
-#define BOLDGREEN "\033[1m\033[32m"   /* Bold Green */
-
-/***/
+#define BLUE "\033[34m" 
+#define BOLDRED "\033[1m\033[31m"     
+#define BOLDYELLOW "\033[1m\033[33m"
+#define BOLDGREEN "\033[1m\033[32m"
+#define BOLDBLUE "\033[1m\033[34m"
+#define BOLDMAGENTA "\033[1m\033[35m"
+#define BOLDWHITE "\033[1m\033[37m"
 
 class contact
 {
 private:
-    int j;
     std::string first_name;
     std::string last_name;
     std::string nickname;
@@ -48,9 +48,9 @@ public:
     contact(void);
     ~contact(void);
     void add_(contact *list, int index);
-    void affect();
     void print(contact *con, int i);
     void print_all(contact *co, int i);
+    void syntax_print(std::string str);
 };
 
 #endif

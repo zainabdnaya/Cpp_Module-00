@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:33:39 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/24 14:25:43 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/24 16:27:46 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,22 @@
 
 contact::contact(void)
 {
-    j = 0;
 }
 
 contact::~contact(void)
 {
-    // std::cout << "\t\tThe End" << std::endl;
+}
+
+void contact::syntax_print(std::string str)
+{
+    if (((str.length()) > 10))
+        std::cout << "|" << (std::setw(11));
+    else
+        std::cout << "|" << (std::setw(10));
+    if ((str.length()) > 10)
+        std::cout << str.substr(0, 10) + ".";
+    else
+        std::cout << str;
 }
 
 void contact::print(contact *con, int i)
@@ -29,49 +39,40 @@ void contact::print(contact *con, int i)
     while (j < i)
     {
         std::cout << std::to_string(j) << std::setw(10);
-        std::cout << "|" << ((con[j].first_name.length()) > 10) ? std::setw(11) :std::setw(10);
-        std::cout << con[j].first_name;
-        std::cout << "|" << std::setw(10);
-        std::cout << con[j].last_name;
+        contact::syntax_print(con[j].first_name);
+        contact::syntax_print(con[j].last_name);
+        contact::syntax_print(con[j].nickname);
         std::cout << std::endl;
         j++;
     }
+        std::cout << con[j].last_name;
 }
 
 void contact::add_(contact *list, int index)
 {
     contact c;
-    std::cout << " \t\tFirst Name : ";
+    std::cout << "\nPleas Enter:" << std::endl;
+    std::cout << " \t\tFirst Name      : ";
     std::getline(std::cin, c.first_name);
-    std::cout << " \t\tLast name  : ";
+    std::cout << " \t\tLast name       : ";
     std::getline(std::cin, c.last_name);
+    std::cout << "\t\tNickname        :";
+    std::getline(std::cin, c.nickname);
+    std::cout << "\t\tLogin           :";
+    std::getline(std::cin, c.login);
+    std::cout << "\t\tPostal adress   :";
+    std::getline(std::cin, c.postal);
+    std::cout << "\t\tEmail           :";
+    std::getline(std::cin, c.email_ad);
+    std::cout << "\t\tPhone number    :";
+    std::getline(std::cin, c.phone);
+    std::cout << "\t\tBirthday date   :";
+    std::getline(std::cin, c.birth);
+    std::cout << "\t\tFavorite meal   :";
+    std::getline(std::cin, c.fv_meal);
+    std::cout << "\t\tUnderwear_color :";
+    std::getline(std::cin, c.under_w);
+    std::cout << "\t\tDarkest_secret  :";
+    std::getline(std::cin, c.secret);
     list[index] = c;
 }
-
-void contact::affect()
-{
-    std::cout << "\nPleas Enter:" << std::endl;
-    std::cout << " \t\tFirst Name : ";
-    std::getline(std::cin, this->first_name);
-    std::cout << " \t\tLast name  : ";
-    std::getline(std::cin, this->last_name);
-    // std::cout << " Nickname :";
-    // std::getline(std::cin, this->nickname);
-    // std::cout << " Login :";
-    // std::getline(std::cin, this->login);
-    // std::cout << " Postal adress :";
-    // std::getline(std::cin, this->postal);
-    // std::cout << " Phone number :";
-    // std::getline(std::cin, this->phone);
-    // std::cout << " Birthday date :";
-    // std::getline(std::cin, this->birth);
-    // std::cout << " Favorite meal :";
-    // std::getline(std::cin, this->fv_meal);
-    // std::cout << " Underwear color :";
-    // std::getline(std::cin, this->under_w);
-    // std::cout << " Darkest secret :";
-    // std::getline(std::cin, this->secret);
-    std::cout << "\n";
-    // this->j++;
-}
-
