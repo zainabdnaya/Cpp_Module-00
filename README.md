@@ -33,6 +33,8 @@ This repository Contains an Introduction to C++
         https://www.cplusplus.com/doc/tutorial/program_structure/
         https://www.geeksforgeeks.org/getline-string-c/
         http://www.cplusplus.com/reference/iomanip/
+    best ressource for new and delete operator : 
+        https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
 
 
 
