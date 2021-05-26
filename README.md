@@ -26,6 +26,33 @@ This repository Contains an Introduction to C++
 
  # getline (string) in C++
     https://www.geeksforgeeks.org/getline-string-c/
+# Menber function
+Member functions are the functions, which have their declaration inside the class definition and works on the data members of the class. 
+The definition of member functions can be inside or outside the definition of class.
+        
+    Exemple : 
+        class x
+        {
+            public:
+                int add()
+                {
+                    return a+b+c;
+                };
+            private:
+                int a,b,c;
+        };
+It can be also defined outsize class like :
+
+        Exemple:
+            class Cube
+            {
+                public:
+                int side;
+                int getVolume();
+            }
+            int Cube :: getVolume()
+                return side*side*side;
+
 
 # Ressources 
 
@@ -33,7 +60,8 @@ This repository Contains an Introduction to C++
         https://www.cplusplus.com/doc/tutorial/program_structure/
         https://www.geeksforgeeks.org/getline-string-c/
         http://www.cplusplus.com/reference/iomanip/
-    best ressource for new and delete operator : 
+        https://www.javatpoint.com/cpp-object-and-class#:~:text=In%20C%2B%2B%2C%20Object%20is,it%20is%20created%20at%20runtime.
+        best ressource for new and delete operator : 
         https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
 
 

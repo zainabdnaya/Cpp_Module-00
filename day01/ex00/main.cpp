@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 17:11:08 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/25 18:26:57 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/26 09:58:30 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 int main()
 {
-    Pony stack;
+    Pony  test;
     
-    stack.ponyOnTheStack();
+    test.ponyOnTheStack();
 
-    Pony *heap = new Pony;
+    test.ponyOnTheHeap();
 
-    heap->ponyOnTheHeap();
-
-    delete  heap;
 }

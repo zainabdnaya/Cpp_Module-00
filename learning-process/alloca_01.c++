@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 14:20:37 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/25 15:22:26 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/26 10:35:34 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,9 @@ class Student{
 
 int main()
 {
-    /*
-    // Student bla = Student("bla");
+    /*// Student bla = Student("bla");
     // Student *puf = new Student("puf");
     Student* students = new Student[13];
-
     delete [] students;*/
     //Refrence
     int x = 10;

@@ -6,13 +6,12 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:39:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/24 13:32:53 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/26 10:31:31 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CLASS_HPP
 #define CLASS_HPP
-
 #include <iostream>
 #include <iomanip>
 #include <string>
