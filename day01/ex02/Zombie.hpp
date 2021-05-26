@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 09:59:54 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/26 12:51:35 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/26 17:06:26 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <string>
 #include <sstream>
 #include <cstring>
+#include <cstdlib>
 
 class Zombie
 {

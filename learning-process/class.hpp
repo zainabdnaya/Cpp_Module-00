@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:39:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/26 10:31:31 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/26 16:15:18 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <string>
 #include <sstream>
 #include <cstring>
-
+#include <ctime>
 
 #define RESET "\033[0m"
 #define BLACK "\033[30m"              /* Black */

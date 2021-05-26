@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:39:20 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/25 17:33:08 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/26 16:17:07 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,18 @@ int Bla::comapre(Bla *blaa)const{
     else if ( this->_foo > blaa->getbl())
         return (1);
     return (0);
+}
+
+char *my_strcat(char *x, char *y)
+{
+    int p;
+    for (p = 0; x[p] != '\0'; p++)
+    {
+        for (int q = 0; y[q] != '\0'; q++, p++)
+        {
+            x[p] = y[q];
+        }
+    }
+    x[p] = '\0';
+    return (x);
 }
