@@ -26,7 +26,7 @@ This repository Contains an Introduction to C++
 
  # getline (string) in C++
     https://www.geeksforgeeks.org/getline-string-c/
-# Menber function
+# Member function
 Member functions are the functions, which have their declaration inside the class definition and works on the data members of the class. 
 The definition of member functions can be inside or outside the definition of class.
         

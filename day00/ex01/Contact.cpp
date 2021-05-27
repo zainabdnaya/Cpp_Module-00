@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ph_book.cpp                                        :+:      :+:    :+:   */
+/*   Contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/23 12:33:39 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/25 14:18:44 by zdnaya           ###   ########.fr       */
+/*   Created: 2021/05/27 11:52:09 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/05/27 12:07:52 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ph_book.hpp"
+#include "Contact.hpp"
 
-contact::contact(void)
+Contact::Contact(void)
 {
 }
 
-contact::~contact(void)
+Contact::~Contact(void)
 {
 }
 
-void contact::syntax_print(std::string str)
+void Contact::syntax_print(std::string str)
 {
     if (((str.length()) > 10))
         std::cout << "|" << (std::setw(11));
@@ -32,24 +32,27 @@ void contact::syntax_print(std::string str)
         std::cout << str;
 }
 
-void contact::print(contact *con, int i)
+void Contact::print(Contact *con, int i)
 {
     int j = 0;
 
     while (j < i)
     {
         std::cout << std::to_string(j) << std::setw(10);
-        contact::syntax_print(con[j].first_name);
-        contact::syntax_print(con[j].last_name);
-        contact::syntax_print(con[j].nickname);
+        Contact
+    ::syntax_print(con[j].first_name);
+        Contact
+    ::syntax_print(con[j].last_name);
+        Contact
+    ::syntax_print(con[j].nickname);
         std::cout << std::endl;
         j++;
     }
 }
 
-void contact::add_(contact *list, int index)
+void Contact::add_(Contact *list, int index)
 {
-    contact c;
+    Contact c;
     std::cout << "\nPleas Enter:" << std::endl;
     std::cout << " \t\tFirst Name      : ";
     std::getline(std::cin, c.first_name);

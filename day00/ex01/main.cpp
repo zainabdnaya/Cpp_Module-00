@@ -6,13 +6,13 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:35:04 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/24 16:39:55 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/27 12:07:50 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ph_book.hpp"
+#include "Contact.hpp"
 
-void contact::print_all(contact *co, int i)
+void Contact::print_all(Contact *co, int i)
 {
     std::cout << BOLDMAGENTA << "\t\tYour Phone Contact" << RESET << std::endl;
     std::cout << BOLDWHITE <<" \tFirst Name      : " + co[i].first_name << std::endl;
@@ -46,7 +46,7 @@ int in_range(int k, int i)
 
 int main()
 {
-    contact Contact[8];
+    Contact Contact[8];
     std::string str;
     int i;
     std::string nbr;

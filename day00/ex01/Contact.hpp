@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ph_book.hpp                                        :+:      :+:    :+:   */
+/*   contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 12:31:26 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/24 16:38:43 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/27 12:08:27 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PH_BOOK
-#define PH_BOOK
+#ifndef Contact_HPP
+#define Contact_HPP
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -28,7 +28,7 @@
 #define BOLDMAGENTA "\033[1m\033[35m"
 #define BOLDWHITE "\033[1m\033[37m"
 
-class contact
+class Contact
 {
 private:
     std::string first_name;
@@ -45,11 +45,11 @@ private:
     std::string secret;
 
 public:
-    contact(void);
-    ~contact(void);
-    void add_(contact *list, int index);
-    void print(contact *con, int i);
-    void print_all(contact *co, int i);
+     Contact(void);
+    ~Contact(void);
+    void add_(Contact *list, int index);
+    void print(Contact *con, int i);
+    void print_all(Contact *co, int i);
     void syntax_print(std::string str);
 };
 
