@@ -1,38 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   ZombieHorde.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/27 12:32:49 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/27 13:13:35 by zdnaya           ###   ########.fr       */
+/*   Created: 2021/05/27 12:37:20 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/05/27 13:13:02 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
+#ifndef ZOMBIEHORDER_HPP
+#define ZOMBIEHORDER_HPP
 #include <iostream>
 #include <iomanip>
 #include <string>
 #include <sstream>
 #include <cstring>
 #include <cstdlib>
+#include "Zombie.hpp"
+#include <unistd.h>
 
-class Zombie
+class ZombieHorder
 {
-
-private:
-    std::string name;
-    std::string type;
-
-public:
-    Zombie();
-    ~Zombie();
-    void set_name(std::string name);
-    void set_type(std::string type);
-    void announce();
+    private:
+        int N;
+        Zombie *zombie;
+    public:
+        ZombieHorder(int N);
+        std::string random_name();
+        void announce();
+        ~ZombieHorder();
 };
-
 
 #endif
