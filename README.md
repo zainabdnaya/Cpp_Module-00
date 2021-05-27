@@ -81,6 +81,9 @@ Note: A "seed" is the starting point for a sequence of pseudo-random numbers.
                 return 0;
             }
 
+# Pointers, References and Dynamic Memory Allocation
+    read this page: https://www3.ntu.edu.sg/home/ehchua/programming/cpp/cp4_PointerReference.html
+
 # Ressources 
 
     best first exemple about C++:
