@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 16:49:58 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/05/27 23:57:56 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/05/28 08:35:24 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 Brain::Brain()
 {
-    std::stringstream   buff;
+    std::stringstream   buffer;
 
-    buff << this;
-    this->neurons = buff.str();
+    buffer << this;
+    this->neurons = buffer.str();
 }
 
 std::string Brain::identify()
