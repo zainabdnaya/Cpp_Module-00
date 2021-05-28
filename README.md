@@ -80,20 +80,25 @@ Note: A "seed" is the starting point for a sequence of pseudo-random numbers.
                 }
                 return 0;
             }
+<a href="https://www.programiz.com/cpp-programming/library-function/cstdlib/srand/">Srand</a>
 
 # Pointers, References and Dynamic Memory Allocation
-    read this page: https://www3.ntu.edu.sg/home/ehchua/programming/cpp/cp4_PointerReference.html
+<a href="https://www3.ntu.edu.sg/home/ehchua/programming/cpp/cp4_PointerReference.html">Pointers, References and Dynamic Memory Allocation</a>
 
 # Ressources 
 
     best first exemple about C++:
-        https://www.cplusplus.com/doc/tutorial/program_structure/
-        https://www.geeksforgeeks.org/getline-string-c/
-        http://www.cplusplus.com/reference/iomanip/
-        https://www.javatpoint.com/cpp-object-and-class#:~:text=In%20C%2B%2B%2C%20Object%20is,it%20is%20created%20at%20runtime.
-        best ressource for new and delete operator : 
-        https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
-        https://www.programiz.com/cpp-programming/library-function/cstdlib/srand/
+<br>
+<a href="https://www.cplusplus.com/doc/tutorial/program_structure/">program_structur</a>
+<br>
+<a href="https://www.geeksforgeeks.org/getline-string-c/">Getline</a>
+<br>
+<a href="http://www.cplusplus.com/reference/iomanip/">Iomanip</a>
+<br>
+<a href="https://www.javatpoint.com/cpp-object-and-class">Iomanip</a>
+<br>
+<a href="https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/">new and delete operator</a>    
+        
 
 
 
