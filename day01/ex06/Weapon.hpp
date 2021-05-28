@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 08:39:19 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/05/28 08:45:54 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/05/28 12:38:39 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

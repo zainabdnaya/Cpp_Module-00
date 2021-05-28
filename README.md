@@ -86,9 +86,6 @@ Note: A "seed" is the starting point for a sequence of pseudo-random numbers.
 <a href="https://www3.ntu.edu.sg/home/ehchua/programming/cpp/cp4_PointerReference.html">Pointers, References and Dynamic Memory Allocation</a>
 
 # Ressources 
-
-    best first exemple about C++:
-<br>
 <a href="https://www.cplusplus.com/doc/tutorial/program_structure/">program_structur</a>
 <br>
 <a href="https://www.geeksforgeeks.org/getline-string-c/">Getline</a>
