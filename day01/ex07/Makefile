@@ -1,9 +1,7 @@
-  
-NAME= Contact
+NAME= ex07
 OBJ_PATH=obj
 COMP= clang++ -Wall -Wextra -Werror
-SRC= Contact.cpp\
-	 main.cpp\
+SRC= main.cpp\
 
 
 OBJ_NAME= $(SRC:.cpp=.o)
