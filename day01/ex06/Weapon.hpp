@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 08:39:19 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/05/28 12:38:39 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/28 17:40:14 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ class Weapon{
     private:
     std::string type;
     public:
-    void                setType(std::string str);
-    const std::string&  getType();
-}
-
+        Weapon(std::string str);
+        void setType(std::string str);
+        const std::string &getType();
+};
 
 #endif
