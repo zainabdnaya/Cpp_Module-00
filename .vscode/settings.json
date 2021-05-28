@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.md": "css",
+        "iosfwd": "cpp",
+        "sstream": "cpp"
+    }
+}
