@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 12:47:47 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/29 09:33:48 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/29 15:42:03 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,25 +36,36 @@ std::string ZombieHorder::random_name()
 ZombieHorder::ZombieHorder(int N)
 {
     int j = 0;
-    this->zombie = new Zombie[N];
-    this->N = N;
-    while (j < N)
+    if (N >= 0)
     {
-        this->zombie[j].set_name(this->random_name());
-        j++;
-        // sleep(1);
+        this->zombie = new Zombie[N];
+        this->N = N;
+        while (j < N)
+        {
+            this->zombie[j].set_name(this->random_name());
+            j++;
+        }
+    }
+    else
+    {
+        std::cout << "Error : put positive Number!" << std::endl;
+        exit(0);
     }
 }
 
-void    ZombieHorder::announce()
+void ZombieHorder::announce()
 {
-    int i = 0;
-
-    while(i < this->N)
+    if (this->N >= 0)
     {
-        this->zombie[i].announce();
-        i++;
+        int i = 0;
+        while (i < this->N)
+        {
+            this->zombie[i].announce();
+            i++;
+        }
     }
+    else
+        return;
 }
 
 ZombieHorder::~ZombieHorder()

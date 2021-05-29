@@ -1,4 +1,4 @@
-NAME= ex07
+NAME= file
 OBJ_PATH=obj
 COMP= clang++ -Wall -Wextra -Werror
 SRC= main.cpp\

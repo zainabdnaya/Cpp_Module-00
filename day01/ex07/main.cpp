@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 17:59:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/28 20:46:05 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/29 17:01:52 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,22 @@ int main()
 
     std::cout << "Enter a FILENAME  :   ";
     std::getline(std::cin, file_name);
+    if (file_name.empty())
+    {
+        std::cout << "Error: Pleas Enter non Empty Name!";
+        exit(0);
+    }
     std::ifstream my_file;
     my_file.open(file_name);
-    std::cout << "Enter S1 (to_search in file): ";
+    std::cout << "Enter non Empty string S1: (to_search in file): ";
     std::getline(std::cin, s1);
-    std::cout << "Enter S2 (to_replace in file): ";
+    std::cout << "Enter non Empty string S2: (to_replace in file): ";
     std::getline(std::cin, s2);
+    if (s1.empty() || s2.empty())
+    {
+        std::cout << "Error: Pleas Enter non Empty strings!";
+        exit(0);
+    }
     if (my_file.is_open())
     {
         while (!my_file.eof())
@@ -48,17 +58,17 @@ int main()
                 str += "\n";
                 i = 1;
             }
-            if(!i)
+            if (!i)
             {
                 str += line;
                 str += "\n";
             }
         }
+        my_file.close();
+        std::ofstream newfile;
+        newfile.open(file_name + ".replace");
+        newfile << str;
+        newfile.close();
     }
-    my_file.close();
-    std::ofstream newfile;
-    newfile.open(file_name+".replace");
-    newfile << str ;
-    newfile.close();
     return 0;
 }
