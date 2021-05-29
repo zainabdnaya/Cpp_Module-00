@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 17:11:06 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/26 09:58:29 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/29 09:25:03 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,5 @@ void Pony::ponyOnTheHeap()
 }
 void  Pony::ponyOnTheStack()
 {
-    Pony Ponys;
     std::cout << " Pony in stack!" << std::endl;
 }
