@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 17:59:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/31 11:50:27 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/31 20:44:58 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,15 +57,17 @@ int main()
         std::getline(my_file, line);
         while (line.find(s1) != std::string::npos)
         {
-            str += line.replace(line.find(s1), s1.length(), s2);
-            str += "\n";
+            line = line.replace(line.find(s1), s1.length(), s2);
+            // str += "\n";
             i = 1;
         }
-        if (!i)
-        {
-            str += line;
-            str += "\n";
-        }
+        str += line;
+        // if (!i)
+        // {
+        //     str += line;
+        //     str += "\n";
+        // }
+        str += "\n";
     }
     my_file.close();
     std::ofstream newfile;
