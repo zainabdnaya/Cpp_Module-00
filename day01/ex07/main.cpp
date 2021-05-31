@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 17:59:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/29 17:01:52 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/31 11:50:27 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,11 @@ int main()
     }
     std::ifstream my_file;
     my_file.open(file_name);
+    if (!my_file.is_open())
+    {
+        std::cout << "Error: file not opened!";
+        exit(0);
+    }
     std::cout << "Enter non Empty string S1: (to_search in file): ";
     std::getline(std::cin, s1);
     std::cout << "Enter non Empty string S2: (to_replace in file): ";
@@ -46,29 +51,26 @@ int main()
         std::cout << "Error: Pleas Enter non Empty strings!";
         exit(0);
     }
-    if (my_file.is_open())
+    while (!my_file.eof())
     {
-        while (!my_file.eof())
+        i = 0;
+        std::getline(my_file, line);
+        while (line.find(s1) != std::string::npos)
         {
-            i = 0;
-            std::getline(my_file, line);
-            while (line.find(s1) != std::string::npos)
-            {
-                str += line.replace(line.find(s1), s1.length(), s2);
-                str += "\n";
-                i = 1;
-            }
-            if (!i)
-            {
-                str += line;
-                str += "\n";
-            }
+            str += line.replace(line.find(s1), s1.length(), s2);
+            str += "\n";
+            i = 1;
         }
-        my_file.close();
-        std::ofstream newfile;
-        newfile.open(file_name + ".replace");
-        newfile << str;
-        newfile.close();
+        if (!i)
+        {
+            str += line;
+            str += "\n";
+        }
     }
+    my_file.close();
+    std::ofstream newfile;
+    newfile.open(file_name + ".replace");
+    newfile << str;
+    newfile.close();
     return 0;
 }
