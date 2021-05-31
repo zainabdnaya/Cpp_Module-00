@@ -3,7 +3,6 @@ OBJ_PATH=obj
 COMP= clang++ -Wall -Wextra -Werror
 SRC= main.cpp\
 
-
 OBJ_NAME= $(SRC:.cpp=.o)
 
 OBJ= $(addprefix $(OBJ_PATH)/,$(OBJ_NAME))

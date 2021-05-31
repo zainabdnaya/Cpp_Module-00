@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 17:59:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/31 20:44:58 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/05/31 22:00:42 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ int main()
     std::string s1;
     std::string s2;
     std::string line;
-    std::string str = "";
-    int i = 0;
+    std::string  str="";
 
     std::cout << "Enter a FILENAME  :   ";
     std::getline(std::cin, file_name);
@@ -53,20 +52,10 @@ int main()
     }
     while (!my_file.eof())
     {
-        i = 0;
         std::getline(my_file, line);
         while (line.find(s1) != std::string::npos)
-        {
             line = line.replace(line.find(s1), s1.length(), s2);
-            // str += "\n";
-            i = 1;
-        }
         str += line;
-        // if (!i)
-        // {
-        //     str += line;
-        //     str += "\n";
-        // }
         str += "\n";
     }
     my_file.close();
