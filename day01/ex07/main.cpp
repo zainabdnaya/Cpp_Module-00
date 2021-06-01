@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 17:59:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/05/31 22:00:42 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/01 09:55:39 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main()
     std::string s1;
     std::string s2;
     std::string line;
-    std::string  str="";
+    std::string str = "";
 
     std::cout << "Enter a FILENAME  :   ";
     std::getline(std::cin, file_name);
