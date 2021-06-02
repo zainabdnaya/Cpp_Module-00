@@ -7,5 +7,5 @@ All days of the C++ project acording to C++ pool 42.
 <br>
 <a href="https://cdn.intra.42.fr/pdf/pdf/22589/en.subject.pdf">Day01</a>
 <br>
-<a href="file:///Users/zdnaya/Downloads/en.subject.pdf">Day02</a>
+<a href="https://cdn.intra.42.fr/pdf/pdf/13163/en.subject.pdf">Day02</a>
 
