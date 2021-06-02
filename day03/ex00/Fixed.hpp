@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/26 11:09:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/02 10:42:32 by zdnaya           ###   ########.fr       */
+/*   Created: 2021/06/02 13:06:05 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/06/02 16:18:16 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_EVENT_HPP
-#define ZOMBIE_EVENT_HPP
+#ifndef FIXED_HPP 
+#define FIXED_HPP
 #include <iostream>
-#include <iomanip>
 #include <string>
-#include <sstream>
-#include <cstring>
-#include "Zombie.hpp"
 
-class ZombieEvent
-{
-    // private:
-public:
-    Zombie *zombie;
-    void setZombieType(std::string type);
-    Zombie *newZombie(std::string name);
-    Zombie *randomChump();
-    ~ZombieEvent();
+#define RESET "\033[0m"
+#define MAGENTA "\033[35m" 
+#define CYAN "\033[36m" 
+#define YELLOW "\033[33m"
+
+class Fixed{
+    private:
+        int p_fixed;
+        static const int f_bits = 8;
+    public:
+        Fixed();
+        ~Fixed();
+        Fixed(Fixed const &copy);
+        Fixed &operator=(Fixed const &equal);
+        int getRawBits(void) const;
+        void setRawBits(int const raw);
 };
-
 #endif

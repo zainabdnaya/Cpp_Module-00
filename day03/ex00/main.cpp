@@ -5,23 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/26 09:59:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/02 10:50:58 by zdnaya           ###   ########.fr       */
+/*   Created: 2021/06/02 13:48:33 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/06/02 13:49:14 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
-#include "ZombieEvent.hpp"
-#include <unistd.h>
+#include "Fixed.hpp"
 
-int main()
+int main(void)
 {
-    Zombie zombie;
-    ZombieEvent zombievent;
-
-    zombie.set_name("kingo");
-    zombie.set_type("mad");
-    zombie.announce();
-    zombievent.randomChump();
-    
+    Fixed a;
+    Fixed b(a);
+    Fixed c;
+    c = b;
+    std::cout << a.getRawBits() << std::endl;
+    std::cout << b.getRawBits() << std::endl;
+    std::cout << c.getRawBits() << std::endl;
+    return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 17:59:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/01 09:55:39 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/02 10:51:11 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main()
     std::string line;
     std::string str = "";
 
-    std::cout << "Enter a FILENAME  :   ";
+    std::cout << "Enter a FILENAME  : ";
     std::getline(std::cin, file_name);
     if (file_name.empty())
     {
