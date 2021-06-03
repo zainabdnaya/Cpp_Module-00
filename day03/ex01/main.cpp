@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:55:36 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/02 21:14:37 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/03 17:55:20 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main(void)
 {
 
     Fixed   a;
-    Fixed const b(10);
+    Fixed const b(10); 
     Fixed const c(42.42f);
     Fixed const d(b);
     a = Fixed(1234.4321f);

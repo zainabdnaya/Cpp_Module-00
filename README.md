@@ -9,3 +9,6 @@ All days of the C++ project acording to C++ pool 42.
 <br>
 <a href="https://cdn.intra.42.fr/pdf/pdf/13163/en.subject.pdf">Day02</a>
 
+# Ressources
+
+<a href="https://github.com/zainabdnaya/Learning_Cpp>check:Readme.md</a>

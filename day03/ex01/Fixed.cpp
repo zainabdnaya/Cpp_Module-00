@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 18:09:41 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/02 21:34:50 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/03 17:55:19 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ Fixed::Fixed(const int num)
 
 Fixed::Fixed(const float p_float)
 {
+
     this->p_fixed = (int)(roundf(p_float * (1 << this->f_bits)));
     std::cout << MAGENTA << "Calling Float Constructor" << RESET << std::endl;
 }
