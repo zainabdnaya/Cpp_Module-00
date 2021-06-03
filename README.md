@@ -11,4 +11,4 @@ All days of the C++ project acording to C++ pool 42.
 
 # Ressources
 
-<a href="https://github.com/zainabdnaya/Learning_Cpp>check:Readme.md</a>
+<a href="https://github.com/zainabdnaya/Learning_Cpp">check Readme.md</a>
