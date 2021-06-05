@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 18:17:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/04 18:48:44 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/04 23:00:27 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,23 @@
 #include <iostream>
 #include <string>
 
-class FragedTrap
+class FragTrap
 {
     private:
         std::string name;
-        int         hit_point;
-        int         max_hitpoint;
-        int         energy_point;
-        int         max_energypoint;
+        int         hitp;
+        int         max_hitp;
+        int         energy;
+        int         max_energy;
         int         level;
-        int         m_att_damage;
-        int         r_att_damage;
-        int         a_dam_reduce;
+        int         melee_dmg;
+        int         ranged_dmg;
+        int         armor_dmg;
     public:
-        FragedTrap();
-        ~FragedTrap();
+        FragTrap();
+        ~FragTrap();
+        FragTrap(FragTrap const &cpy);
+        FragTrap	&operator=(FragTrap const &equal);
         void        rangedAttack(std::string const & target);
         void        meleeAtack(std::string const &target);
         void        takeDamage(unsigned int amount);
