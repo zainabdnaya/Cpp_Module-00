@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 18:17:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/05 14:18:08 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/06 10:50:44 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define FRAGTRAP_HPP
 #include <iostream>
 #include <string>
+#include <stdlib.h>
 
 class FragTrap
 {
@@ -33,9 +34,6 @@ class FragTrap
         FragTrap(std::string str);
         FragTrap(FragTrap const &cpy);
         FragTrap	        &operator=(FragTrap const &equal);
-        // std::string         get_name();
-        // int                 get_energy();
-        // void                set_energy(int energy, int val);
         void                rangedAttack(std::string const & target);
         void                meleeAtack(std::string const &target);
         void                takeDamage(unsigned int amount);
