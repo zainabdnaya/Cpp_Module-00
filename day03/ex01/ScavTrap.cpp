@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/06 16:57:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/06 18:58:27 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/07 00:10:51 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,14 +114,14 @@ void ScavTrap::challengeNewcomer(std::string const &target)
     switch (k)
     {
     case 1:
-        std::cout << CYAN << "CHALENGE_NUMBER_1 against "  << target << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_1 against " << target << RESET << std::endl;
         break;
     case 2:
-        std::cout << CYAN << "CHALENGE_NUMBER_2 against " << target << "?! Aaahhh!" << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_2 against " << target  << RESET << std::endl;
         break;
 
     case 3:
-        std::cout << CYAN << "CHALENGE_NUMBER_3 against " << target  << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_3 against " << target << RESET << std::endl;
         break;
 
     case 4:
@@ -129,16 +129,18 @@ void ScavTrap::challengeNewcomer(std::string const &target)
         break;
 
     case 5:
-        std::cout << CYAN << "CHALENGE_NUMBER_5 against "  << target << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_5 against " << target << RESET << std::endl;
         break;
 
     case 6:
-        std::cout << CYAN << "CHALENGE_NUMBER_6 against " << target<< RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_6 against " << target << RESET << std::endl;
         break;
 
     case 7:
         std::cout << CYAN << "CHALENGE_NUMBER_7 against " << target << RESET << std::endl;
     default:
+        std::cout << CYAN << "CHALENGE_NUMBER_2 against " << target  << RESET << std::endl;
+
         break;
     }
 }

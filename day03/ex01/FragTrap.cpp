@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 22:34:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/06 18:40:30 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/07 00:05:15 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,8 +107,6 @@ FragTrap &FragTrap::operator=(FragTrap const &cpy)
 void FragTrap::vaulthunter_dot_exe(std::string const &target)
 {
 	int k = 0;
-	srand(time(NULL));
-	k = rand() % 7;
 	switch (k)
 	{
 	case 1:
@@ -136,9 +134,12 @@ void FragTrap::vaulthunter_dot_exe(std::string const &target)
 
 	case 7:
 		std::cout << CYAN << "Hot potato!" << RESET << std::endl;
-	default:
+	default:		
+	std::cout << CYAN << "Crap, one shot left!" << RESET << std::endl;
+
 		break;
 	}
+	k = rand() % 7;
 }
 
 FragTrap::~FragTrap()

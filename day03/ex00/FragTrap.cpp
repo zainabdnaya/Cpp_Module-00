@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 22:34:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/06 16:50:21 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/07 00:04:48 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -137,6 +137,8 @@ void FragTrap::vaulthunter_dot_exe(std::string const &target)
 	case 7:
 		std::cout << CYAN << "Hot potato!" << RESET << std::endl;
 	default:
+			std::cout << CYAN << "Crap, one shot left!" << RESET << std::endl;
+
 		break;
 	}
 }
