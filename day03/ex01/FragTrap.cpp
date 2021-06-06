@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 22:34:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/06 16:50:21 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/06 18:40:30 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ FragTrap::FragTrap(FragTrap const &equal)
 	std::cout << "FR4G-TP is Using a Copy Constructor" << std::endl;
 }
 
-void FragTrap::meleeAtack(std::string const &target)
+void FragTrap::meleeAttack(std::string const &target)
 {
 	std::cout << this->name << " attacks " << target << " from a close distance." << std::endl;
 	std::cout << RED << "\t\tEnergy -= 30 " << RESET << std::endl;
@@ -63,7 +63,7 @@ void FragTrap::rangedAttack(std::string const &target)
 	this->hitp = this->hitp - 20;
 }
 
-void FragTrap::beRepair(unsigned int amount)
+void FragTrap::beRepaired(unsigned int amount)
 {
 	this->armor_dmg = this->armor_dmg - amount;
 	std::cout << "Using armor against one attack, you still have " << this->armor_dmg << std::endl;

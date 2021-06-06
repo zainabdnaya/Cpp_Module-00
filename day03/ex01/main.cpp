@@ -3,25 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/05 11:10:29 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/06 16:32:58 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/06 18:59:08 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-    FragTrap opponent1 = FragTrap("BOB");
+    ScavTrap opponent1 = ScavTrap("BOB");
     opponent1.rangedAttack("jack");
-    opponent1.meleeAtack("jack");
-    opponent1.beRepair(1);
+    opponent1.meleeAttack("jack");
+    opponent1.beRepaired(1);
     opponent1.takeDamage(0);
     opponent1.rangedAttack("jack");
-    opponent1.meleeAtack("jack");
+    opponent1.meleeAttack("jack");
     opponent1.rangedAttack("jack"); 
-    opponent1.vaulthunter_dot_exe("jack");
+    opponent1.challengeNewcomer("jack");
     opponent1.takeDamage(0);
 }
