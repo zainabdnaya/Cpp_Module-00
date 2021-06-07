@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/06 16:57:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 20:41:34 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/07 21:05:37 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,14 +103,5 @@ void ScavTrap::challengeNewcomer(std::string const &target)
 
 ScavTrap::~ScavTrap()
 {
-    // if (this->Energy_points == 0 && this->Hit_points == 0)
-    {
-        std::cout << RED << "bye bye from the child!" << RESET << std::endl;
-    }
-    // else if (this->Energy_points > 0 || this->Hit_points > 0)
-    {
-        // this->Level = this->Level + 1;
-        // std::cout << GREEN << this->name << " You Win! "
-        //           << " Upgrade your Level to  " << this->Level << RESET << std::endl;
-    }
+    std::cout << RED << "bye bye from the child!" << RESET << std::endl;
 }
