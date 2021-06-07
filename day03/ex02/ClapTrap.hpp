@@ -6,16 +6,15 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 11:00:32 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 11:44:57 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/07 20:48:47 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ClapTrap_HPP
-#define ClapTrap_HPP
+#ifndef CLAPTRAP_HPP
+#define CLAPTRAP_HPP
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-
 #define RESET "\033[0m"
 #define RED "\033[31m"
 #define GREEN "\033[32m"
@@ -24,8 +23,6 @@
 
 class ClapTrap
 {
-    private:
-
     protected:
         std::string     name;
         int             Hit_points;
@@ -39,22 +36,11 @@ class ClapTrap
     public:
         ClapTrap();
         ~ClapTrap();
-        ClapTrap(std::string str);
-        ClapTrap(ClapTrap const &cpy);
-        ClapTrap &operator=(ClapTrap const &equal);
         void rangedAttack(std::string const &target);
         void meleeAttack(std::string const &target);
         void takeDamage(unsigned int amount);
         void beRepaired(unsigned int amount);
 };
 
-class FragTrap: public ClapTrap
-{
-    void vaulthunter_dot_exe(std::string const &target);
-};
-class ScavTrap: public ClapTrap
-{
-    void challengeNewcomer(std::string const &target);
-};
 
 #endif
