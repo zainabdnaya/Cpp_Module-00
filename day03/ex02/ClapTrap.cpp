@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 11:00:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 21:07:06 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/07 21:57:11 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ ClapTrap::ClapTrap()
 
     std::cout << GREEN << "Welcome to The Original Game!" << RESET << std::endl;
 }
-// ClapTrap::ClapTrap(std::string str)
-// {
-//     this->name = str;
-// }
+ClapTrap::ClapTrap(std::string str)
+{
+    this->name = str;
+}
 
 // ClapTrap::ClapTrap(ScavTrap trap)
 // {
