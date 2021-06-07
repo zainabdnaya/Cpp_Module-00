@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 18:17:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 10:57:52 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/07 11:19:19 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,15 @@
 class FragTrap
 {
     private:
-        std::string     name;
-        int             Hit_points;
-        int             Max_hit_points;
-        int             Energy_points;
-        int             Max_energy_points;
-        int             Level;
-        int             melee_damage;
-        int             ranged_damage;
-        int             armor_damage;
-
+        std::string name;
+        int         hitp;
+        int         max_hitp;
+        int         energy;
+        int         max_energy;
+        int         level;
+        int         melee_dmg;
+        int         ranged_dmg;
+        int         armor_dmg;
     public:
         FragTrap();
         ~FragTrap();

@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/06 16:57:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 11:04:41 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/07 11:05:23 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ ScavTrap::ScavTrap()
     this->Level = 1;
     this->melee_damage = 20;
     this->ranged_damage = 15;
-    this->armor_damage = 3;
+    this->armor_damage= 3;
     this->name = "";
     std::cout << " Initializing the game" << std::endl;
 }
@@ -36,7 +36,7 @@ ScavTrap::ScavTrap(std::string str)
     this->Level = 1;
     this->melee_damage = 20;
     this->ranged_damage = 15;
-    this->armor_damage = 3;
+    this->armor_damage= 3;
     std::cout << "\t\tEnter a Name : " << std::endl;
     std::cout << YELLOW << "\t\t\t" << this->name << RESET << std::endl;
 }
@@ -65,8 +65,8 @@ void ScavTrap::rangedAttack(std::string const &target)
 
 void ScavTrap::beRepaired(unsigned int amount)
 {
-    this->armor_damage = this->armor_damage - amount;
-    std::cout << "Using armor against one attack, you still have " << this->armor_damage << std::endl;
+    this->armor_damage= this->armor_damage- amount;
+    std::cout << "Using armor against one attack, you still have " << this->armor_damage<< std::endl;
     std::cout << YELLOW << "\t\t\tEnergy += 10" << RESET << std::endl;
     std::cout << YELLOW << "\t\t\thit_point +=10" << RESET << std::endl;
     if (this->Hit_points > 100)
@@ -88,7 +88,7 @@ void ScavTrap::takeDamage(unsigned int amount)
     if (this->Hit_points > 0 && this->Energy_points == 0)
         this->Energy_points = this->Hit_points;
     std::cout << "Energy % = " << this->Energy_points << std::endl;
-    std::cout << "number of armor_damageleft = " << this->armor_damage << RESET << std::endl;
+    std::cout << "number of armor_damageleft = " << this->armor_damage<< RESET << std::endl;
 }
 
 ScavTrap &ScavTrap::operator=(ScavTrap const &cpy)
@@ -155,6 +155,6 @@ ScavTrap::~ScavTrap()
     {
         this->Level = this->Level + 1;
         std::cout << GREEN << this->name << " You Win! "
-                  << " Upgrade your Level to  " << this->Level << RESET << std::endl;
+                  << " Upgrade your Level to " << this->Level << RESET << std::endl;
     }
 }

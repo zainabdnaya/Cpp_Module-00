@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/04 18:17:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 10:57:52 by zdnaya           ###   ########.fr       */
+/*   Created: 2021/06/07 11:00:32 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/06/07 11:44:57 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#ifndef ClapTrap_HPP
+#define ClapTrap_HPP
 #include <iostream>
 #include <string>
 #include <stdlib.h>
 
 #define RESET "\033[0m"
-#define RED "\033[31m"         
-#define GREEN "\033[32m"         
-#define YELLOW "\033[33m"         
-#define CYAN "\033[36m"         
+#define RED "\033[31m"
+#define GREEN "\033[32m"
+#define YELLOW "\033[33m"
+#define CYAN "\033[36m"
 
-
-class FragTrap
+class ClapTrap
 {
     private:
+
+    protected:
         std::string     name;
         int             Hit_points;
         int             Max_hit_points;
@@ -35,18 +36,25 @@ class FragTrap
         int             melee_damage;
         int             ranged_damage;
         int             armor_damage;
-
     public:
-        FragTrap();
-        ~FragTrap();
-        FragTrap(std::string str);
-        FragTrap(FragTrap const &cpy);
-        FragTrap	        &operator=(FragTrap const &equal);
-        void                rangedAttack(std::string const & target);
-        void                meleeAttack(std::string const &target);
-        void                takeDamage(unsigned int amount);
-        void                beRepaired(unsigned int amount);
-        void                vaulthunter_dot_exe(std::string const &target);
+        ClapTrap();
+        ~ClapTrap();
+        ClapTrap(std::string str);
+        ClapTrap(ClapTrap const &cpy);
+        ClapTrap &operator=(ClapTrap const &equal);
+        void rangedAttack(std::string const &target);
+        void meleeAttack(std::string const &target);
+        void takeDamage(unsigned int amount);
+        void beRepaired(unsigned int amount);
+};
+
+class FragTrap: public ClapTrap
+{
+    void vaulthunter_dot_exe(std::string const &target);
+};
+class ScavTrap: public ClapTrap
+{
+    void challengeNewcomer(std::string const &target);
 };
 
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 22:34:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/07 00:04:48 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/07 11:47:05 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ FragTrap::FragTrap(std::string str)
 FragTrap::FragTrap(FragTrap const &equal)
 {
 	*this = equal;
-	std::cout << "FR4G-TP is Using a Copy Constructor" << std::endl;
+	std::cout << "Making a clone of " << this->name << std::endl;
 }
 
 void FragTrap::meleeAtack(std::string const &target)
@@ -153,6 +153,6 @@ FragTrap::~FragTrap()
 	{
 		this->level = this->level + 1;
 		std::cout << GREEN << this->name << " You Win! "
-				  << "You upgrade the Level " << this->level << RESET << std::endl;
+				  << "Upgrade your  Level to  " << this->level << RESET << std::endl;
 	}
 }
