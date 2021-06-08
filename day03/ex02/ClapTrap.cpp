@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 11:00:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 21:57:11 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/08 10:20:30 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 ClapTrap::ClapTrap()
 {
 
-    std::cout << GREEN << "Welcome to The Original Game!" << RESET << std::endl;
+    std::cout << CYAN << "Welcome to The Original Game!" << RESET << std::endl;
 }
 ClapTrap::ClapTrap(std::string str)
 {
@@ -34,7 +34,7 @@ ClapTrap::ClapTrap(std::string str)
 void ClapTrap::meleeAttack(std::string const &target)
 {
     std::cout << this->name << " attacks " << target << " from a close distance." << std::endl;
-    std::cout << RED << "\t\tEnergy_points -= 30 " << RESET << std::endl;
+    std::cout << YELLOW << "\t\tEnergy_points -= 30 " << RESET << std::endl;
     this->Energy_points = this->Energy_points - this->melee_damage;
     this->Hit_points = this->Hit_points - this->melee_damage;
 }
@@ -42,7 +42,7 @@ void ClapTrap::meleeAttack(std::string const &target)
 void ClapTrap::rangedAttack(std::string const &target)
 {
     std::cout << this->name << " attacks " << target << " form a long  range." << std::endl;
-    std::cout << RED << "\t\tEnergy_points -= 20 " << RESET << std::endl;
+    std::cout << YELLOW << "\t\tEnergy_points -= 20 " << RESET << std::endl;
     this->Energy_points = this->Energy_points - this->ranged_damage;
     this->Hit_points = this->Hit_points - this->ranged_damage;
 }
@@ -52,11 +52,11 @@ void ClapTrap::takeDamage(unsigned int amount)
     amount = 0;
     if (this->Hit_points < 0)
         this->Hit_points = 0;
-    std::cout << YELLOW << "hit_point % = " << this->Hit_points << std::endl;
+    std::cout  << "hit_point % = " << this->Hit_points << std::endl;
     if (this->Energy_points < 0)
         this->Energy_points = 0;
     std::cout << "Energy_points % = " << this->Energy_points << std::endl;
-    std::cout << "number of armor_damage left = " << this->armor_damage << RESET << std::endl;
+    std::cout << "number of armor_damage left = " << this->armor_damage <<  std::endl;
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
@@ -77,13 +77,13 @@ ClapTrap::~ClapTrap()
 {
     if (this->Energy_points == 0 && this->Hit_points == 0)
     {
-        std::cout << RED << "bye bye from the child!" << RESET << std::endl;
+        std::cout << CYAN << "bye bye from the child!" << RESET << std::endl;
     }
     else if (this->Energy_points > 0 || this->Hit_points > 0)
     {
         this->Level = this->Level + 1;
-        std::cout << GREEN << this->name << " You Win! "
+        std::cout << CYAN << this->name << " You Win! "
                   << " Upgrade your Level to  " << this->Level << RESET << std::endl;
     }
-    std::cout << GREEN << "bye bye from Original Game!" << RESET << std::endl;
+    std::cout << CYAN << "bye bye from Original Game!" << RESET << std::endl;
 }

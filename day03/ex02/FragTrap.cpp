@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 22:34:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/07 18:55:46 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/08 10:19:12 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ FragTrap::FragTrap()
 FragTrap::FragTrap(std::string str)
 {
 	this->name = str;
-	std::cout << YELLOW << "\t\t\tWelcome "<<  this->name << " to the Child from the Original Game" << RESET << std::endl;
+	std::cout << YELLOW << "\t\t\tWelcome " << this->name << " to the Child Game" << RESET << std::endl;
 	this->Hit_points = 100;
 	this->Max_hit_points = 100;
 	this->Energy_points = 100;
@@ -38,7 +38,6 @@ FragTrap::FragTrap(std::string str)
 	this->melee_damage = 30;
 	this->ranged_damage = 20;
 	this->armor_damage = 5;
-
 }
 
 FragTrap &FragTrap::operator=(FragTrap const &cpy)
@@ -65,51 +64,38 @@ FragTrap::FragTrap(FragTrap const &equal)
 void FragTrap::vaulthunter_dot_exe(std::string const &target)
 {
 	int k = 0;
+	k = rand() % 7;
 	switch (k)
 	{
 	case 1:
-		std::cout << CYAN << " Take that !" << target << RESET << std::endl;
+		std::cout << CYAN << "\t\t\tTake that !" << target << RESET << std::endl;
 		break;
 	case 2:
-		std::cout << CYAN << "Badass " << target << "?! Aaahhh!" << RESET << std::endl;
+		std::cout << CYAN << "\t\t\tBadass " << target << "?! Aaahhh!" << RESET << std::endl;
 		break;
-
 	case 3:
-		std::cout << CYAN << "Crap, one shot left!" << RESET << std::endl;
+		std::cout << CYAN << "\t\t\tCrap, one shot left!" << RESET << std::endl;
 		break;
-
 	case 4:
-		std::cout << CYAN << "This is why I was built !" << RESET << std::endl;
+		std::cout << CYAN << "\t\t\tThis is why I was built !" << RESET << std::endl;
 		break;
-
 	case 5:
-		std::cout << CYAN << "I am a tornado of death and bullets!" << RESET << std::endl;
+		std::cout << CYAN << "\t\t\tI am a tornado of death and bullets!" << RESET << std::endl;
 		break;
-
 	case 6:
-		std::cout << CYAN << "Grenaaaade!" << RESET << std::endl;
+		std::cout << CYAN << "\t\t\tGrenaaaade!" << RESET << std::endl;
 		break;
-
 	case 7:
-		std::cout << CYAN << "Hot potato!" << RESET << std::endl;
-	default:		
-	std::cout << CYAN << "Crap, one shot left!" << RESET << std::endl;
-
+		std::cout << CYAN << "\t\t\tHot potato!" << RESET << std::endl;
+		break;
+	default:
+		std::cout << CYAN << "\t\t\tI am a tornado of death and bullets!" << RESET << std::endl;
 		break;
 	}
-	k = rand() % 7;
+
 }
 
 FragTrap::~FragTrap()
 {
-	// if (this->Energy_points == 0)
-	{
-		std::cout << RED << "bye bye from the child!" << RESET << std::endl;
-	}
-	// else if (this->Energy_points > 0)
-	{
-		// this->Level = this->Level + 1;
-		// std::cout << GREEN << this->name << " You Win! "
-		// 		  << "Upgrade your  Level to " << this->Level << RESET << std::endl;
-	}
+	std::cout << GREEN << "\t\t\tbye bye from the child!" << RESET << std::endl;
 }
