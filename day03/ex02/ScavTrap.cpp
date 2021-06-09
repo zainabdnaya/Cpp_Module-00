@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/06 16:57:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/08 10:19:20 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/09 18:36:07 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ ScavTrap::ScavTrap(std::string str)
 ScavTrap::ScavTrap(ScavTrap const &equal)
 {
     *this = equal;
-    std::cout << "FR4G-TP is Using a Copy Constructor" << std::endl;
+    std::cout << "ScavTrap is Using a Copy Constructor" << std::endl;
 }
 
 ScavTrap &ScavTrap::operator=(ScavTrap const &cpy)
