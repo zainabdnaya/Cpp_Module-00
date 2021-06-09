@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 11:00:32 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 21:57:21 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/09 15:18:06 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,7 @@ class ClapTrap
     public:
         ClapTrap();
         ~ClapTrap();
-            ClapTrap(std::string str);
-
+        ClapTrap(std::string str);
         void rangedAttack(std::string const &target);
         void meleeAttack(std::string const &target);
         void takeDamage(unsigned int amount);

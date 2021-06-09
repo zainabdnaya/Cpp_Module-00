@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/09 11:53:17 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/09 14:29:06 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/09 15:00:20 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ SuperTrap::SuperTrap(std::string str)
     this->NinjaTrap::melee_damage = 60;
     this->FragTrap::ranged_damage = 20;
     this->FragTrap::armor_damage = 5;
-    this->NinjaTrap::meleeAttack(str);
 }
 
 void    SuperTrap::rangedAttack(std::string const &target)
@@ -43,5 +42,5 @@ void    SuperTrap::meleeAttack(std::string const &target)
 
 SuperTrap::~SuperTrap()
 {
-    std::cout << "Bye Bye for last time in this daim day!" << std::endl;
+    std::cout << "Bye Bye for last time from this daim day!" << std::endl;
 }

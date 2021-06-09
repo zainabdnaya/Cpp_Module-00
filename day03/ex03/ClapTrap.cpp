@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 11:00:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/08 12:19:35 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/09 15:09:25 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,4 +78,9 @@ ClapTrap::~ClapTrap()
                   << " Upgrade your Level to  " << this->Level << RESET << std::endl;
     }
     std::cout << CYAN << "bye bye from Original Game!" << RESET << std::endl;
+}
+
+std::string ClapTrap::getName()
+{
+    return (this->name);
 }

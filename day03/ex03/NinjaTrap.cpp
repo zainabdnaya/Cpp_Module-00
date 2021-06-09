@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 12:17:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/08 18:57:55 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/09 15:09:45 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,7 @@ NinjaTrap::NinjaTrap(std::string str)
 }
 void NinjaTrap::ninjaShoebox(ClapTrap clap)
 {
-    clap.takeDamage(0);
-    std::cout << "  Stand in the ashes of a trillion dead souls, and asks the ghosts if honor matters. The silence is your answer.! "  << std::endl;
+    std::cout << clap.getName() <<  "  Stand in the ashes of a trillion dead souls, and asks the ghosts if honor matters. The silence is your answer.! "  << std::endl;
 }
 
 void NinjaTrap::ninjaShoebox(FragTrap frag)
