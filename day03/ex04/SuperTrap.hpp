@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/09 10:43:20 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/09 15:00:02 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/10 20:06:30 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ class SuperTrap : public FragTrap, public NinjaTrap
         SuperTrap();
         ~SuperTrap();
         SuperTrap(std::string str);
+        SuperTrap(SuperTrap const &cpy);
+        SuperTrap &operator=(SuperTrap const &equal);
         void    rangedAttack(std::string const &target);
         void    meleeAttack(std::string const &target);
 };

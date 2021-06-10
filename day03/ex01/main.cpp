@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/05 11:10:29 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 10:59:39 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/10 17:14:10 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main()
     opponent1.rangedAttack("jack");
     opponent1.meleeAttack("jack");
     opponent1.beRepaired(1);
-    opponent1.takeDamage(0);
+    opponent1.takeDamage(5);
     opponent1.rangedAttack("jack");
     opponent1.meleeAttack("jack");
     opponent1.rangedAttack("jack"); 

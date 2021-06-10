@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 12:17:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/09 12:10:15 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/10 17:18:10 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,27 +38,29 @@ NinjaTrap::NinjaTrap(std::string str)
     this->ranged_damage = 5;
     this->armor_damage = 0;
 }
+
 void NinjaTrap::ninjaShoebox(ClapTrap clap)
 {
-    clap.takeDamage(0);
-    std::cout << "  Stand in the ashes of a trillion dead souls, and asks the ghosts if honor matters. The silence is your answer.! "  << std::endl;
+    clap.meleeAttack(clap.getName());
+    std::cout << clap.getName() << "  Stand in the ashes of a trillion dead souls, and asks the ghosts if honor matters. The silence is your answer.! " << std::endl;
 }
 
 void NinjaTrap::ninjaShoebox(FragTrap frag)
 {
-    frag.vaulthunter_dot_exe("bla");
-    std::cout<<  " I'll kill u with my CandyBar "  << std::endl;
+    frag.vaulthunter_dot_exe("frag");
+    std::cout << " I'll kill u with my CandyBar " << std::endl;
 }
 
 void NinjaTrap::ninjaShoebox(ScavTrap scav)
 {
-    scav.challengeNewcomer("bla");
-    std::cout << " You damAss , u can't hold a swored "  << std::endl;
+    scav.challengeNewcomer("scav");
+    std::cout << " You damAss , u can't hold a swored " << std::endl;
 }
 
 void NinjaTrap::ninjaShoebox(NinjaTrap ninja)
 {
-    std::cout  << ninja.name << " ninja poo here for justice "  << std::endl;
+    std::cout << ninja.name << " ninja POOO here for justice " << std::endl;
+    ninja.rangedAttack(ninja.getName());
 }
 
 NinjaTrap::~NinjaTrap()

@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 11:00:32 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/09 13:33:08 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/10 17:18:33 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ class ClapTrap
         virtual void meleeAttack(std::string const &target);
         void takeDamage(unsigned int amount);
         void beRepaired(unsigned int amount);
+        std::string getName();
 };
 
 

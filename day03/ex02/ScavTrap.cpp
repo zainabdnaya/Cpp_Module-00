@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/06 16:57:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/09 18:36:07 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/10 16:09:39 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,32 +63,39 @@ ScavTrap &ScavTrap::operator=(ScavTrap const &cpy)
 
 void ScavTrap::challengeNewcomer(std::string const &target)
 {
-    int k = rand() % 7;
+    int k = 1;
+    srand(time(NULL));
+    k = rand() % 7;
     switch (k)
     {
     case 1:
-        std::cout << CYAN << "\t\t\tCHALENGE_NUMBER_1 against " << target << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_1: Ice Bucket Challenge ,  against " << target << RESET << std::endl;
         break;
     case 2:
-        std::cout << CYAN << "\t\t\tCHALENGE_NUMBER_2 against " << target << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_2 : Drawing a character  Blindfolded  against " << target << RESET << std::endl;
         break;
+
     case 3:
-        std::cout << CYAN << "\t\t\tCHALENGE_NUMBER_3 against " << target << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_3 : Makeup Challenge against " << target << RESET << std::endl;
         break;
+
     case 4:
-        std::cout << CYAN << "\t\t\tCHALENGE_NUMBER_4 against " << target << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_4: Hot Chili Challeng against " << target << RESET << std::endl;
         break;
+
     case 5:
-        std::cout << CYAN << "\t\t\tCHALENGE_NUMBER_5 against " << target << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_5: Brain Freezer Challenge  against " << target << RESET << std::endl;
         break;
+
     case 6:
-        std::cout << CYAN << "\t\t\tCHALENGE_NUMBER_6 against " << target << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_6:  Talk To A Stranger Challenge against " << target << RESET << std::endl;
         break;
+
     case 7:
-        std::cout << CYAN << "\t\t\tCHALENGE_NUMBER_7 against " << target << RESET << std::endl;
-        break;
+        std::cout << CYAN << "CHALENGE_NUMBER_7: Guess The Song Challenge against " << target << RESET << std::endl;
     default:
-        std::cout << CYAN << "\t\t\tCHALENGE_NUMBER_8 against " << target << RESET << std::endl;
+        std::cout << CYAN << "CHALENGE_NUMBER_2: Eating A Cake With The Hands Tied Back Challenge  against " << target << RESET << std::endl;
+
         break;
     }
 }
