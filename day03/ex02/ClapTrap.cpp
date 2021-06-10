@@ -14,9 +14,9 @@
 
 ClapTrap::ClapTrap()
 {
-
     std::cout << CYAN << "Welcome to The Original Game!" << RESET << std::endl;
 }
+
 ClapTrap::ClapTrap(std::string str)
 {
     this->name = str;
@@ -49,6 +49,7 @@ void ClapTrap::meleeAttack(std::string const &target)
     std::cout << this->name << " attacks " << target << " from a close distance." << std::endl;
     std::cout << YELLOW << "\t\tEnergy_points -=" << this->melee_damage << RESET << std::endl;
     this->Energy_points = this->Energy_points - this->melee_damage;
+    	std::cout << RED << "\t\t\t" << target  << " Slaping u & ur Hits_pints -= " <<  this->Hit_points << RESET << std::endl;
     this->Hit_points = this->Hit_points - this->melee_damage;
 }
 
@@ -57,12 +58,13 @@ void ClapTrap::rangedAttack(std::string const &target)
     std::cout << this->name << " attacks " << target << " form a long  range." << std::endl;
     std::cout << YELLOW << "\t\tEnergy_points -= " << this->ranged_damage << RESET << std::endl;
     this->Energy_points = this->Energy_points - this->ranged_damage;
+    std::cout << RED << "\t\t\t" << target  << "threw on u fire balls & ur Hits_pints -= " <<  this->Hit_points << RESET << std::endl;
     this->Hit_points = this->Hit_points - this->ranged_damage;
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-    amount = 0;
+    amount = this->armor_damage;
     if (this->Hit_points < 0)
         this->Hit_points = 0;
     std::cout  << "hit_point % = " << this->Hit_points << std::endl;

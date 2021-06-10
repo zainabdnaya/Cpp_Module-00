@@ -32,6 +32,7 @@ public:
     NinjaTrap();
     ~NinjaTrap();
     NinjaTrap(std::string str);
+    NinjaTrap &NinjaTrap::operator=(NinjaTrap const &cpy);
     void ninjaShoebox(ClapTrap clap);
     void ninjaShoebox(FragTrap frag);
     void ninjaShoebox(ScavTrap scav);

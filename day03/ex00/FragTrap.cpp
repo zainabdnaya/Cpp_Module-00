@@ -51,7 +51,7 @@ void FragTrap::meleeAttack(std::string const &target)
 	std::cout << name << " attacks " << target << " from a close diatance." << std::endl;
 	std::cout << RED << "\t\tEnergy_points -= 30 " << RESET << std::endl;
 	Energy_points = Energy_points - 30;
-	std::cout << RED << "\t\t\t" << target  << "Hits_pints -= 30 " << RESET << std::endl;
+	std::cout << RED << "\t\t\t" << target  << " attacks back with a iron fits & ur Hits_pints -= 30 " << RESET << std::endl;
 	Hit_points = Hit_points - 30;
 }
 
@@ -60,7 +60,7 @@ void FragTrap::rangedAttack(std::string const &target)
 	std::cout << name << " attacks " << target << " from a long range" << std::endl;
 	std::cout << RED << "\t\tEnergy_points -= 20 " << RESET << std::endl;
 	Energy_points = Energy_points - 20;
-	std::cout << RED << "\t\t\t" << target << "Hits_pints -= 20 " << RESET << std::endl;
+	std::cout << RED << "\t\t\t" << target << " attacks back with an arrow & ur Hits_pints -= 20 " << RESET << std::endl;
 	Hit_points = Hit_points - 20;
 }
 
@@ -80,14 +80,14 @@ void FragTrap::beRepaired(unsigned int amount)
 
 void FragTrap::takeDamage(unsigned int amount)
 {
-	amount = 0;
+	amount = armor_damage;
 	if (Hit_points < 0)
 		Hit_points = 0;
 	std::cout << YELLOW << "hit_point % = " << Hit_points << std::endl;
 	if (Energy_points < 0)
 		Energy_points = 0;
 	std::cout << "Energy_points % = " << Energy_points << std::endl;
-	std::cout << "number of armor_damage left = " << armor_damage << RESET << std::endl;
+	std::cout << "number of armor_damage left = " << amount << RESET << std::endl;
 }
 
 FragTrap &FragTrap::operator=(FragTrap const &cpy)

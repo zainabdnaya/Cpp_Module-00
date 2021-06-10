@@ -49,9 +49,11 @@ FragTrap::FragTrap(FragTrap const &equal)
 
 void FragTrap::meleeAttack(std::string const &target)
 {
-	std::cout << this->name << " attacks " << target << " with a swored." << std::endl;
+	std::cout << this->name << " attacks " << target << " with an sowred." << std::endl;
 	std::cout << RED << "\t\tEnergy_points -= 30 " << RESET << std::endl;
 	this->Energy_points = this->Energy_points - 30;
+		std::cout << RED << "\t\t\t" << target  << " attacks back with a rock & ur Hits_pints -= 30 " << RESET << std::endl;
+
 	this->Hit_points = this->Hit_points - 30;
 }
 
@@ -60,6 +62,7 @@ void FragTrap::rangedAttack(std::string const &target)
 	std::cout << this->name << " attacks " << target << " with a gun" << std::endl;
 	std::cout << RED << "\t\tEnergy_points -= 20 " << RESET << std::endl;
 	this->Energy_points = this->Energy_points - 20;
+	std::cout << RED << "\t\t\t" << target  << " threw a Granade  & ur Hits_pints -= 30 " << RESET << std::endl;
 	this->Hit_points = this->Hit_points - 20;
 }
 
@@ -79,7 +82,7 @@ void FragTrap::beRepaired(unsigned int amount)
 
 void FragTrap::takeDamage(unsigned int amount)
 {
-	amount = 0;
+	amount = this->armor_damage;
 	if (this->Hit_points < 0)
 		this->Hit_points = 0;
 	std::cout << YELLOW << " hit_point : " << this->Hit_points << std::endl;

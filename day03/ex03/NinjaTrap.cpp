@@ -38,6 +38,21 @@ NinjaTrap::NinjaTrap(std::string str)
     this->ranged_damage = 5;
     this->armor_damage = 0;
 }
+
+NinjaTrap &NinjaTrap::operator=(NinjaTrap const &cpy)
+{
+    this->Hit_points = cpy.Hit_points;
+    this->Max_hit_points = cpy.Max_hit_points;
+    this->Energy_points = cpy.Energy_points;
+    this->Max_energy_points = cpy.Max_energy_points;
+    this->Level = cpy.Level;
+    this->name = cpy.name;
+    this->melee_damage = cpy.melee_damage;
+    this->ranged_damage = cpy.ranged_damage;
+    this->armor_damage = cpy.armor_damage;
+    std::cout << "The Game is reloading" << std::endl;
+    return (*this);
+}
 void NinjaTrap::ninjaShoebox(ClapTrap clap)
 {
     clap.meleeAttack(clap.getName());
