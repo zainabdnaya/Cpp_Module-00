@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 22:34:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/10 19:56:36 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/11 12:06:08 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,8 +110,8 @@ void FragTrap::vaulthunter_dot_exe(std::string const &target)
 	if (Energy_points >= 25)
 	{
 		Energy_points = Energy_points - 25;
-		srand(time(NULL));
-		int k = rand() % 7;
+		srand((unsigned)time(0));
+		int k = 1 + (rand() % 8);
 		std::cout << RED << "\t\t\tEnergy_points: " << Energy_points << std::endl;
 		switch (k)
 		{
@@ -121,19 +121,15 @@ void FragTrap::vaulthunter_dot_exe(std::string const &target)
 		case 2:
 			std::cout << CYAN << "Badass " << target << "?! Aaahhh!" << RESET << std::endl;
 			break;
-
 		case 3:
 			std::cout << CYAN << "Crap, one shot left!" << RESET << std::endl;
 			break;
-
 		case 4:
 			std::cout << CYAN << "AWKWAAAAARD! !" << RESET << std::endl;
 			break;
-
 		case 5:
-			std::cout << CYAN << "I am a tornado of death and bullets!" << RESET << std::endl;
+			std::cout << CYAN << "Piw Piw Piw!" << RESET << std::endl;
 			break;
-
 		case 6:
 			std::cout << CYAN << "Grenaaaade!" << RESET << std::endl;
 			break;

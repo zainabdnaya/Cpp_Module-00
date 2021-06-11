@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 22:34:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/10 14:40:47 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/11 12:16:41 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,8 +66,8 @@ void FragTrap::vaulthunter_dot_exe(std::string const &target)
 	if (this->Energy_points >= 25)
 	{
 		this->Energy_points = this->Energy_points - 25;
-		srand(time(NULL));
-		int k = rand() % 7;
+		srand((unsigned)time(0));
+		int k = 1 + (rand() % 8);
 		std::cout << RED << "\t\t\tEnergy_points: " << this->Energy_points << std::endl;
 		switch (k)
 		{

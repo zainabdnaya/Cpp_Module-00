@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 11:00:32 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/10 17:18:33 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/11 12:16:12 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 #define GREEN "\033[32m"
 #define YELLOW "\033[33m"
 #define CYAN "\033[36m"
+#include <ctime>
 
 class ClapTrap
 {

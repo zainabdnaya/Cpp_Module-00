@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/06 16:57:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/10 16:09:39 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/11 12:15:18 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,8 +64,8 @@ ScavTrap &ScavTrap::operator=(ScavTrap const &cpy)
 void ScavTrap::challengeNewcomer(std::string const &target)
 {
     int k = 1;
-    srand(time(NULL));
-    k = rand() % 7;
+    srand((unsigned)time(0));
+    int k = 1 + (rand() % 8);
     switch (k)
     {
     case 1:

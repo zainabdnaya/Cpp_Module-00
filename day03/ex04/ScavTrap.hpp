@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/06 16:57:05 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/07 21:57:17 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/11 12:17:28 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
+#include <ctime>
 #define RESET "\033[0m"
 #define RED "\033[31m"
 #define GREEN "\033[32m"

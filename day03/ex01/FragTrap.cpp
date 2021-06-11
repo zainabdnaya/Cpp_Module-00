@@ -112,13 +112,13 @@ void FragTrap::vaulthunter_dot_exe(std::string const &target)
 	if (this->Energy_points >= 25)
 	{
 		this->Energy_points = this->Energy_points - 25;
-		srand(time(NULL));
-		int k = rand() % 7;
+		srand((unsigned)time(0));
+		int k = 1 + (rand() % 8);
 		std::cout << RED << "\t\t\tEnergy_points: " << this->Energy_points << std::endl;
 		switch (k)
 		{
 		case 1:
-			std::cout << CYAN << " Take that !" << target << RESET << std::endl;
+			std::cout << CYAN << " Piw Piw Piw!" << target << RESET << std::endl;
 			break;
 		case 2:
 			std::cout << CYAN << "Badass " << target << "?! Aaahhh!" << RESET << std::endl;
