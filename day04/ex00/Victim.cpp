@@ -1,0 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Victim.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/06/14 16:31:30 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/06/14 19:43:36 by zdnaya           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Victim.hpp"
+
+Victim::Victim()
+{
+    std::cout << "I 'm" << this->name << " and I like otters!" << std::endl;
+}
+
+Victim::Victim(std::string name)
+{
+    this->name = name;
+    std::cout << "Some random victim called " << this->name << " just appeared! " << std::endl;
+}
+
+Victim::Victim(Victim const &cpy)
+{
+    *this = cpy;
+}
+
+void Victim::getPolymorphed() const 
+{
+    std::cout << this->name << " has been turned into a cute little sheep!" << std::endl;
+}
+
+
+Victim::~Victim()
+{
+    std::cout << "Victim " << this->name << " just died for no apparent reason!" << std::endl;
+}
