@@ -6,23 +6,23 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:08:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 15:59:55 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/15 16:51:28 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PowerFist.hpp"
 
-PowerFits::PowerFits()
-{
-    this->name = "Plasma Rifle";
-    this->apcost = 8;
-    this->damage = 50;
-}
+// PowerFits::PowerFits()
+// {
+//     this->name = "Plasma Rifle";
+//     this->apcost = 8;
+//     this->damage = 50;
+// }
 
-PowerFits::PowerFits(PowerFits const &equal)
-{
-    *this = equal;
-}
+// PowerFits::PowerFits(PowerFits const &equal)
+// {
+//     *this = equal;
+// }
 
 void PowerFits::attack() const
 {
