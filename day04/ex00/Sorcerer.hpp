@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 12:42:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/14 19:51:03 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/15 09:38:31 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ class Sorcerer{
     public:
         ~Sorcerer();
         Sorcerer(std::string name,std::string title);
-        std::string get_name(void);
-        std::string get_title(void);
+        std::string const &get_name(void) const;
+        std::string const &get_title(void) const;
         Sorcerer(Sorcerer const &cpy);
         void polymorph(Victim const &) const;
         Sorcerer &operator=(Sorcerer const &equal);

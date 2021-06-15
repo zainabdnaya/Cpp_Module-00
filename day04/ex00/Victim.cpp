@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 16:31:30 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/14 19:43:36 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/15 09:49:45 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 Victim::Victim()
 {
-    std::cout << "I 'm" << this->name << " and I like otters!" << std::endl;
 }
 
 Victim::Victim(std::string name)
@@ -31,6 +30,22 @@ Victim::Victim(Victim const &cpy)
 void Victim::getPolymorphed() const 
 {
     std::cout << this->name << " has been turned into a cute little sheep!" << std::endl;
+}
+Victim &Victim::operator=(Victim const &equal)
+{
+    this->name = equal.name;
+    return (*this);
+}
+
+std::string const &Victim::get_name(void) const
+{
+    return (this->name);
+}
+
+std::ostream &operator<<(std::ostream &out, Victim const &vic)
+{
+    out << "I'm " << vic.get_name() << " and I like otters !" << std::endl;
+    return (out);
 }
 
 
