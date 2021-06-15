@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:00:34 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 15:54:46 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/15 16:49:30 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,21 +20,22 @@
 
 int main()
 {
-    Character *me = new Character("me");
-    std::cout << *me;
-    Enemy *b = new RadScorpion();
-    AWeapon *pr = new PlasmaRifle();
-    AWeapon *pf = new PowerFist();
-    me->equip(pr);
-    std::cout << *me;
-    me->equip(pf);
-    me->attack(b);
-    std::cout << *me;
-    me->equip(pr);
-    std::cout << *me;
-    me->attack(b);
-    std::cout << *me;
-    me->attack(b);
-    std::cout << *me;
+    // AWeapon Weapon("bla")          ;
+    // Character *me = new Character("me");
+    // std::cout << *me;
+    // Enemy *b = new RadScorpion();
+    // AWeapon *pr = new PlasmaRifle();
+    // AWeapon *pf = new PowerFist();
+    // me->equip(pr);
+    // std::cout << *me;
+    // me->equip(pf);
+    // me->attack(b);
+    // std::cout << *me;
+    // me->equip(pr);
+    // std::cout << *me;
+    // me->attack(b);
+    // std::cout << *me;
+    // me->attack(b);
+    // std::cout << *me;
     return 0;
 }

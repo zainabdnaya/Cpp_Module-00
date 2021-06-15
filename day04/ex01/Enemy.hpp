@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:01:41 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 16:01:45 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/15 16:20:30 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@
 class Enemy
 {
     protected:
-
+        int hp;
+        std::string const &type;
     public:
         Enemy(int hp, std::string const &type);
         ~Enemy();
