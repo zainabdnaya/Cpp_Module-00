@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:03:04 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 15:59:39 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/16 18:35:56 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@
 #include <sstream>
 #include "AWeapon.hpp"
 
-class PowerFits : public AWeapon
+class PowerFist : public AWeapon
 {
     private:
 
     public:
-        PowerFits();
-        ~PowerFits();
-        PowerFits(PowerFits const &cpy);
-        PowerFits &operator=(PowerFits const &equal);
-        virtual void attack() const = 0;
+        PowerFist();
+        ~PowerFist();
+        PowerFist(PowerFist const &cpy);
+        PowerFist &operator=(PowerFist const &equal);
+        void attack() const;
 };
 
 #endif

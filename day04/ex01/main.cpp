@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:00:34 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 16:49:30 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/16 18:35:17 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int main()
     // Character *me = new Character("me");
     // std::cout << *me;
     // Enemy *b = new RadScorpion();
-    // AWeapon *pr = new PlasmaRifle();
-    // AWeapon *pf = new PowerFist();
+    AWeapon *pr = new PlasmaRifle();
+    AWeapon *pf = new PowerFist();
     // me->equip(pr);
     // std::cout << *me;
     // me->equip(pf);

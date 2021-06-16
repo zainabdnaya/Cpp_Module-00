@@ -6,11 +6,11 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 11:41:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 15:18:30 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/16 17:26:24 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef AWEAPON_HPP 
+#ifndef AWEAPON_HPP
 #define AWEAPON_HPP
 #include <iostream>
 #include <string>
@@ -23,8 +23,9 @@ class AWeapon
         int apcost;
         int damage;
     public:
+        AWeapon();
         AWeapon(std::string const &name, int apcost, int damage);
-        ~AWeapon();
+        virtual ~AWeapon();
         AWeapon(AWeapon const &cpy);
         std::string getName() const;
         int getAPCost() const;

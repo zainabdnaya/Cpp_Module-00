@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:02:12 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 15:45:42 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/16 18:03:32 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@
 #include <sstream>
 #include "AWeapon.hpp"
 
-class Plasmarifle : public AWeapon
+class PlasmaRifle : public AWeapon
 {
     private:
 
     public:
-        Plasmarifle();
-        ~Plasmarifle();
-        Plasmarifle(Plasmarifle const &cpy);
-        Plasmarifle &operator=(Plasmarifle const &equal);
-        virtual void attack()const = 0;
+        PlasmaRifle();
+        ~PlasmaRifle();
+        PlasmaRifle(PlasmaRifle const &cpy);
+        PlasmaRifle &operator=(PlasmaRifle const &equal);
+        void attack()const;
 };
 #endif

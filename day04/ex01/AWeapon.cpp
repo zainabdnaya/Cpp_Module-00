@@ -6,11 +6,16 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:05:32 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 15:48:37 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/16 17:27:40 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AWeapon.hpp"
+
+AWeapon::AWeapon()
+{
+    
+}
 
 AWeapon::AWeapon(std::string const &name, int apcost, int damage)
 {
@@ -39,10 +44,7 @@ int AWeapon::getDamage() const
     return (this->damage);
 }
 
-void AWeapon::attack()const
-{
-    std::cout << "piouuu piouuu piouuu" << std::endl;
-}
+
 
 AWeapon &AWeapon::operator=(AWeapon const &equal)
 {

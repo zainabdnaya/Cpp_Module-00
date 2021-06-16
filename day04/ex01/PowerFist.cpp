@@ -6,30 +6,30 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:08:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 16:51:28 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/16 18:38:00 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PowerFist.hpp"
 
-// PowerFits::PowerFits()
-// {
-//     this->name = "Plasma Rifle";
-//     this->apcost = 8;
-//     this->damage = 50;
-// }
+PowerFist::PowerFist()
+{
+    this->name = "Plasma Rifle";
+    this->apcost = 8;
+    this->damage = 50;
+}
 
-// PowerFits::PowerFits(PowerFits const &equal)
-// {
-//     *this = equal;
-// }
+PowerFist::PowerFist(PowerFist const &equal)
+{
+    *this = equal;
+}
 
-void PowerFits::attack() const
+void PowerFist::attack() const
 {
     std::cout << "pschhh... SBAM!" << std::endl;
 }
 
-PowerFits &PowerFits::operator=(PowerFits const &equal)
+PowerFist &PowerFist::operator=(PowerFist const &equal)
 {
     this->name = equal.name;
     this->damage = equal.damage;
@@ -37,7 +37,7 @@ PowerFits &PowerFits::operator=(PowerFits const &equal)
     return (*this);
 }
 
-PowerFits::~PowerFits()
+PowerFist::~PowerFist()
 {
     std::cout << "Bye bye!" << std::endl;
 }
