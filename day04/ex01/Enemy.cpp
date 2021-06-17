@@ -12,34 +12,43 @@
 
 #include "Enemy.hpp"
 
-// Enemy::Enemy(int hp, std::string const &type)
-// {
-    // this->hp = hp;
-    // this->type = type;
-// }
+Enemy::Enemy(int hp, std::string const &type)
+{
+    this->hp = hp;
+    this->type = type;
+}
+
+Enemy::Enemy(Enemy const &cpy)
+{
+	*this = cpy;
+}  
+
+Enemy &Enemy::operator=(Enemy const &equal)
+{
+	this->hp = equal.hp;
+	this->type = equal.type;
+	return *this;
+}
 
 int Enemy::getHP() const
 {
-    return (this->hp);
+	return (this->hp);
 }
 
 std::string Enemy::getType() const
 {
-    return (this->type);
+	return type;
 }
 
 void Enemy::takeDamage(int damage)
 {
-    if (damage < 0)
-        std::cout << "do nothing!" << std::endl;
+    if (damage > this->hp)
+        this->hp = 0;
     else
-    {
-        if (this->hp < 0)
-            std::cout << "can't reduce" << std::endl;
-        else
-            {
-                this->hp = this->hp - 10;
-                std::cout << "damage taken" << std::endl;
-            }
-    }
+        this->hp = this->hp - damage;
 }
+
+Enemy::~Enemy()
+{
+}
+

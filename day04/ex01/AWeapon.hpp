@@ -23,7 +23,6 @@ class AWeapon
         int apcost;
         int damage;
     public:
-        AWeapon();
         AWeapon(std::string const &name, int apcost, int damage);
         virtual ~AWeapon();
         AWeapon(AWeapon const &cpy);

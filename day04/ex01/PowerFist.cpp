@@ -26,7 +26,7 @@ PowerFist::PowerFist(PowerFist const &equal)
 
 void PowerFist::attack() const
 {
-    std::cout << "pschhh... SBAM!" << std::endl;
+    std::cout << "* pschhh... SBAM! *" << std::endl;
 }
 
 PowerFist &PowerFist::operator=(PowerFist const &equal)
@@ -39,5 +39,4 @@ PowerFist &PowerFist::operator=(PowerFist const &equal)
 
 PowerFist::~PowerFist()
 {
-    std::cout << "Bye bye!" << std::endl;
 }

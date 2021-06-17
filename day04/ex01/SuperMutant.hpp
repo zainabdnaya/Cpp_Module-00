@@ -12,5 +12,19 @@
 
 #ifndef SUPERMUTANT_HPP
 #define SUPERMUTANT_HPP
+#include <string>
+#include <iostream>
+#include "Enemy.hpp"
+
+class SuperMutant : virtual public Enemy
+{
+private:
+public:
+	SuperMutant();
+	~SuperMutant();
+	SuperMutant(SuperMutant const &cpy);
+	SuperMutant &operator=(SuperMutant const &equal);
+	void takeDamage(int);
+};
 
 #endif

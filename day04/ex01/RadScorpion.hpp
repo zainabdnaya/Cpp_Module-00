@@ -12,7 +12,17 @@
 
 #ifndef RADSCORPION_HPP
 #define RADSCORPION_HPP
+#include <string>
+#include <iostream>
+#include "Enemy.hpp"
 
-
-
+class RadScorpion : virtual public Enemy
+{
+private:
+public:
+	RadScorpion();
+	~RadScorpion();
+	RadScorpion(RadScorpion const &cpy);
+	RadScorpion &operator=(RadScorpion const &equal);
+};
 #endif

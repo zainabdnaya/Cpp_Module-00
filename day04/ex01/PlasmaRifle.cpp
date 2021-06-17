@@ -26,7 +26,7 @@ PlasmaRifle::PlasmaRifle(PlasmaRifle const &equal)
 
 void PlasmaRifle::attack() const
 {
-    std::cout << "piouuu piouuu piouuu" << std::endl;
+    std::cout << "* piouuu piouuu piouuu *" << std::endl;
 }
 
 PlasmaRifle &PlasmaRifle::operator=(PlasmaRifle const &equal)
@@ -39,5 +39,4 @@ PlasmaRifle &PlasmaRifle::operator=(PlasmaRifle const &equal)
 
 PlasmaRifle::~PlasmaRifle()
 {
-    std::cout << "Bye bye!" << std::endl;
 }

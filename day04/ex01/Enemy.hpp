@@ -22,12 +22,13 @@ class Enemy
         int hp;
         std::string const &type;
     public:
-        Enemy();
-        Enemy(int hp, std::string const &type);
-        std::string virtual getType() const;
-        int getHP() const;
-        virtual void takeDamage(int damage);
-        virtual ~Enemy();
+	Enemy(int hp, std::string const &type);
+	virtual ~Enemy();
+	Enemy(Enemy const &cpy);
+	Enemy &operator=(Enemy const &equal);
+	std::string getType() const;
+	int getHP() const;
+	virtual void takeDamage(int);
 };
 
 #endif

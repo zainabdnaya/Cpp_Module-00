@@ -12,11 +12,6 @@
 
 #include "AWeapon.hpp"
 
-AWeapon::AWeapon()
-{
-    
-}
-
 AWeapon::AWeapon(std::string const &name, int apcost, int damage)
 {
     this->name = name;
@@ -56,5 +51,4 @@ AWeapon &AWeapon::operator=(AWeapon const &equal)
 
 AWeapon::~AWeapon()
 {
-    std::cout << "Bye bye!" << std::endl;
 }
