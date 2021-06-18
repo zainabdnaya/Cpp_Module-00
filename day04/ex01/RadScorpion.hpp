@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:03:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 12:04:23 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/18 15:13:19 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class RadScorpion : virtual public Enemy
 private:
 public:
 	RadScorpion();
-	~RadScorpion();
+	virtual ~RadScorpion();
 	RadScorpion(RadScorpion const &cpy);
 	RadScorpion &operator=(RadScorpion const &equal);
 };

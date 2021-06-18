@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:05:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 02:24:57 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/18 15:47:02 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,9 @@ std::string Character::message() const
     std::ostringstream str;
 
     if (this->weapon != nullptr)
-        str << this->name << " has " << ap << " and "
-            << "wields a " << weapon->getName() << std::endl;
+        str << this->name << " has " << ap << " and " << "wields a " << weapon->getName() << std::endl;
     else
-        str << name << " has " << ap << " and "
-            << "is unarmed" << std::endl;
+        str << name << " has " << ap << " and " << "is unarmed" << std::endl;
     return (str.str());
 }
 
@@ -92,8 +90,8 @@ void Character::attack(Enemy *enemy)
         }
         else
         {
-            ap = ap - weapon->getAPCost();
             std::cout << name << " attacks " << enemy->getType() << " with a " << weapon->getName() << std::endl;
+            ap = ap - weapon->getAPCost();
             weapon->attack();
             enemy->takeDamage(weapon->getDamage());
             if (enemy->getHP() == 0)

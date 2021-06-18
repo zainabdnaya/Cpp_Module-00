@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   SuperMutant.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:09:38 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 01:08:00 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/18 15:25:48 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 SuperMutant::SuperMutant(): Enemy(170, "Super Mutant")
 {
-	std::cout << "Gaaah. Me want smash heads !" << std::endl;
+	std::cout << "Gaaah. Me want smash heads!" << std::endl;
 }
 
 SuperMutant::SuperMutant(SuperMutant const &cpy) : Enemy(cpy)

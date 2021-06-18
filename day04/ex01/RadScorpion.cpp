@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   RadScorpion.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:09:06 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 01:04:38 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/18 15:14:01 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
