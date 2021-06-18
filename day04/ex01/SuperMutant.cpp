@@ -3,36 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   SuperMutant.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:09:38 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 12:09:48 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/18 01:08:00 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "SuperMutant.hpp"
 
-SuperMutant::SuperMutant()
+SuperMutant::SuperMutant(): Enemy(170, "Super Mutant")
 {
-    this->hp = 170;
-    this->type = "Super Mutant";
 	std::cout << "Gaaah. Me want smash heads !" << std::endl;
 }
 
-SuperMutant::~SuperMutant()
+SuperMutant::SuperMutant(SuperMutant const &cpy) : Enemy(cpy)
 {
-	std::cout << "Aaargh ..." << std::endl;
-}
-
-SuperMutant::SuperMutant(SuperMutant const &cpy)
-{
-    *this = cpy;
 }
 
 SuperMutant &SuperMutant::operator=(SuperMutant const &equal)
 {
-	this->hp = equal.hp;
-	this->type = equal.type;
+	Enemy::operator=(equal);
 	return *this;
 }
 
@@ -42,4 +33,10 @@ void SuperMutant::takeDamage(int damage)
         damage = damage - 3;
     else
         damage = 0;
+    Enemy::takeDamage(damage);
+}
+
+SuperMutant::~SuperMutant()
+{
+	std::cout << "Aaargh ..." << std::endl;
 }

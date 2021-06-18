@@ -3,40 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   PowerFist.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:08:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/16 18:38:00 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/18 01:06:05 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PowerFist.hpp"
 
-PowerFist::PowerFist()
+PowerFist::PowerFist() : AWeapon("Power Fist", 50, 8)
 {
-    this->name = "Plasma Rifle";
-    this->apcost = 8;
-    this->damage = 50;
 }
 
-PowerFist::PowerFist(PowerFist const &equal)
+PowerFist::PowerFist(PowerFist const &cpy): AWeapon(cpy)
 {
-    *this = equal;
-}
-
-void PowerFist::attack() const
-{
-    std::cout << "* pschhh... SBAM! *" << std::endl;
 }
 
 PowerFist &PowerFist::operator=(PowerFist const &equal)
 {
-    this->name = equal.name;
-    this->damage = equal.damage;
-    this->apcost = equal.apcost;
-    return (*this);
+	AWeapon::operator=(equal);
+	return *this;
 }
 
+void PowerFist::attack() const
+{
+	std::cout << "* pschhh... SBAM! *" << std::endl;
+}
 PowerFist::~PowerFist()
 {
 }

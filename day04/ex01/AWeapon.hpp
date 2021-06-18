@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AWeapon.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 11:41:23 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/16 17:26:24 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/18 01:38:03 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ class AWeapon
 {
     protected:
         std::string name;
-        int apcost;
         int damage;
+        int apcost;
     public:
         AWeapon(std::string const &name, int apcost, int damage);
         virtual ~AWeapon();

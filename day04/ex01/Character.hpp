@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:00:58 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 12:01:36 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/18 01:35:55 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 class Character
 {
 private:
-	AWeapon *weapon;
 	std::string name;
 	int ap;
+	AWeapon *weapon;
 public:
 	Character(std::string const &name);
 	Character(Character const &cpy);
@@ -32,9 +32,10 @@ public:
 	void recoverAP();
 	void equip(AWeapon *);
 	void attack(Enemy *);
+	std::string message() const;
 	std::string getName() const;
-    int getAp();
-    AWeapon *get_Aweapon();
+    int getAp() const;
+    AWeapon *get_Aweapon() const;
 };
 
 std::ostream &operator<<(std::ostream &output, const Character &character);

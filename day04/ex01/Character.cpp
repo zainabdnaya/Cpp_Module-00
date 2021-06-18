@@ -3,101 +3,112 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:05:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 12:05:59 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/18 02:24:57 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
 
-Character::Character(std::string const &name)
+Character::Character(std::string const &name) : name(name), ap(40), weapon(nullptr)
 {
-    this->name = name;
-    this->ap = 40;
-    this->AWeapon = nullptr;
 }
 
 Character::Character(Character const &cpy)
 {
-	*this = cpy;
+    *this = cpy;
 }
 
 Character &Character::operator=(Character const &equal)
 {
-	name = equal.name;
-	ap = equal.ap;
-	weapon = equal.weapon;
-	return *this;
+    name = equal.name;
+    ap = equal.ap;
+    weapon = equal.weapon;
+    return *this;
 }
 
-std::string Character::getName() const;`
+std::string Character::getName() const
 {
-    return(this->name);
+    return (this->name);
 }
 
-std::string Character::getAp() const;`
+int Character::getAp() const
 {
-    return(this->ap);
+    return (this->ap);
 }
 
-AWeapon *Character::get_Aweapon() const;`
+AWeapon *Character::get_Aweapon() const
 {
-    return(this->get_Aweapon);
+    return (this->weapon);
+}
+
+std::string Character::message() const
+{
+    std::ostringstream str;
+
+    if (this->weapon != nullptr)
+        str << this->name << " has " << ap << " and "
+            << "wields a " << weapon->getName() << std::endl;
+    else
+        str << name << " has " << ap << " and "
+            << "is unarmed" << std::endl;
+    return (str.str());
 }
 
 std::ostream &operator<<(std::ostream &output, const Character &character)
 {
-    std::string str; 
-
-	if (weapon == nullptr)
-        str =  character.getName() +  " has " + character.getAp() + " and " + "is unarmed";
-	else
-        str =  character.getName() +  " has " + character.getAp() + " and " + "wields a " << character.get_Aweapon()->getName();
-    output << str << std::endl;
-	return output;
+    output << character.message();
+    return output;
 }
 
 void Character::recoverAP()
 {
-    if (this->ap + 10 > 40 )
-        this->ap = 40;
-    else 
-        this->ap  = this->ap + 10;
+    if (ap + 10 > 40)
+        ap = 40;
+    else
+        ap = ap + 10;
 }
 
 void Character::attack(Enemy *enemy)
 {
-	if (enemy == nullptr)
-	{
-		std::cout << "No Enemy Left" << std::endl;
-		return;
+    if (enemy == nullptr)
+    {
+        std::cout << "No Enemy Left" << std::endl;
+        return;
     }
-    if (this->weapon == nullptr)
-		return;
+    if (weapon == nullptr)
+    {
+        std::cout << "No Weapon Left" << std::endl;
+        return;
+    }
     else
-	{
-            std::cout << name << " attacks " << enemy->getType() << " with a " << this->weapon->getName() << std::endl;
-	        this->ap = this->ap - weapon->getAPCost();
-	        this->weapon->attack();
-	        enemy->takeDamage(this->weapon->getDamage());
-	        if (enemy->getHP() == 0)
-	        {
-		            delete enemy;
-                    enemy = nullptr;
+    {
+        if (ap < weapon->getAPCost())
+        {
+            std::cout << "No ap Left" << std::endl;
+            return;
+        }
+        else
+        {
+            ap = ap - weapon->getAPCost();
+            std::cout << name << " attacks " << enemy->getType() << " with a " << weapon->getName() << std::endl;
+            weapon->attack();
+            enemy->takeDamage(weapon->getDamage());
+            if (enemy->getHP() == 0)
+            {
+                delete enemy;
+                enemy = nullptr;
             }
+        }
     }
 }
-
-
 
 void Character::equip(AWeapon *weapon)
 {
-	this->weapon = weapon;
+    this->weapon = weapon;
 }
-
-
 
 Character::~Character()
 {

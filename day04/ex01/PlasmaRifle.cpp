@@ -3,25 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   PlasmaRifle.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:08:09 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/16 17:25:12 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/18 01:02:25 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PlasmaRifle.hpp"
 
-PlasmaRifle::PlasmaRifle()
+PlasmaRifle::PlasmaRifle() : AWeapon("Plasma Rifle", 21, 5)
 {
-    this->name = "Plasma Rifle";
-    this->apcost = 5;
-    this->damage = 21;
 }
 
-PlasmaRifle::PlasmaRifle(PlasmaRifle const &equal)
+PlasmaRifle::PlasmaRifle(PlasmaRifle const &equal) :  AWeapon(equal)
 {
-    *this = equal;
 }
 
 void PlasmaRifle::attack() const
@@ -31,10 +27,8 @@ void PlasmaRifle::attack() const
 
 PlasmaRifle &PlasmaRifle::operator=(PlasmaRifle const &equal)
 {
-    this->name = equal.name;
-    this->damage = equal.damage;
-    this->apcost = equal.apcost;
-    return (*this);
+	AWeapon::operator=(equal);
+	return *this;
 }
 
 PlasmaRifle::~PlasmaRifle()

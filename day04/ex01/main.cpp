@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:00:34 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/16 18:35:17 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/18 01:09:52 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 
 int main()
 {
-    AWeapon Weapon("bla")          ;
     Character *me = new Character("me");
     std::cout << *me;
     Enemy *b = new RadScorpion();
