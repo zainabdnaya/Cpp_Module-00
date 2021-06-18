@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:05:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 15:47:02 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/18 16:07:46 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,8 @@ std::string Character::message() const
 {
     std::ostringstream str;
 
-    if (this->weapon != nullptr)
-        str << this->name << " has " << ap << " and " << "wields a " << weapon->getName() << std::endl;
+    if (weapon != nullptr)
+        str << name << " has " << ap << " and " << "wields a " << weapon->getName() << std::endl;
     else
         str << name << " has " << ap << " and " << "is unarmed" << std::endl;
     return (str.str());
