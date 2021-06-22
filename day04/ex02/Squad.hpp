@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/19 11:31:30 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/21 21:30:25 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/22 16:06:36 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,19 @@
 class Squad : public ISquad
 {
 
+private:
+    int count;
+    ISpaceMarine** n_th;
 public:
 	Squad();
 	~Squad();
-	Squad(Squad const &rhs);
-	Squad &operator=(Squad const &rhs);
+	Squad(Squad const &cpy);
+	Squad &operator=(Squad const &equal);
 
 	//Interface Use
 	int getCount() const ;
 	ISpaceMarine *getUnit(int N) const ;
-	int push(ISpaceMarine *);
+	int push(ISpaceMarine *unit);
 };
 
 #endif

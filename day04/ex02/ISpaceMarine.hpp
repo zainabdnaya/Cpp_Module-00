@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/19 11:00:04 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/21 20:29:03 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/22 15:54:18 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,8 @@
 #include <sstream>
 #include <cstring>
 
-
 class ISpaceMarine
 {
-
-
 public:
     virtual ~ISpaceMarine() {}
     virtual ISpaceMarine *clone() const = 0;

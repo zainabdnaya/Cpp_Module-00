@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 11:03:35 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/21 21:08:38 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/22 11:20:03 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@
 
 class ISquad
 {
-protected:
-    unsigned int count;
-    unsigned int *n_th;
+
 public:
     virtual ~ISquad() {}
     virtual int getCount() const = 0;
