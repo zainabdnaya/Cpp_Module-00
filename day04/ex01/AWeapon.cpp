@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AWeapon.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:05:32 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/16 17:27:40 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/23 13:00:43 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ AWeapon::AWeapon(std::string const &name, int apcost, int damage)
     this->damage = damage;
 }
 
-AWeapon::AWeapon(AWeapon const &equal)
+AWeapon::AWeapon(AWeapon const &cpy)
 {
-    *this = equal;
+    *this = cpy;
 }
 
 std::string AWeapon::getName() const

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AssaultTerminator.hpp                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 11:10:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/22 16:17:27 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/23 13:31:45 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

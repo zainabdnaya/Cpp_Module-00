@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   TacticalMarine.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 21:25:40 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/22 15:57:58 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/23 13:13:49 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@ class ISpaceMarine;
 
 class TacticalMarine : public ISpaceMarine
 {
-    private:
+private:
 
 public:
     TacticalMarine();
     ~TacticalMarine();
-    TacticalMarine (TacticalMarine const &cpy);
-	TacticalMarine &operator=(TacticalMarine const &equal);
+    TacticalMarine(TacticalMarine const &cpy);
+    TacticalMarine &operator=(TacticalMarine const &equal);
 
-    //use Interface 
+    //use Interface
     ISpaceMarine *clone() const;
     void battleCry() const;
     void rangedAttack() const;
