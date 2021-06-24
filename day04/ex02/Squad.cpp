@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/18 17:27:29 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 19:05:52 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 19:54:31 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int Squad::push(ISpaceMarine *unit)
 {
     if ( count == 0)
     {
-        n_th =  new ISpaceMarine * [1];
+        n_th =  new ISpaceMarine *[1];
         n_th[0] = unit;
         count++;
     }
@@ -59,10 +59,12 @@ int Squad::push(ISpaceMarine *unit)
     {
         int i;
       ISpaceMarine **tmp =  new ISpaceMarine * [count + 1];
-        for(i = 0; i < count    ; i++)
+        for(i = 0; i < count ; i++)
             tmp[i] = n_th[i];
         tmp[i] = unit;
-        delete [] n_th;
+        for(i = 0; i < count ; i++)
+                delete n_th[i];
+        // delete[] n_th;
         n_th = tmp;
         count++;
     }
@@ -70,6 +72,4 @@ int Squad::push(ISpaceMarine *unit)
 }
 
 Squad::~Squad() {
-
-        delete [] n_th;
 }

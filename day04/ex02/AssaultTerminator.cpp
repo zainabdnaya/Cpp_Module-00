@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   AssaultTerminator.cpp                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 21:38:19 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/22 16:47:20 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 19:58:56 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AssaultTerminator.hpp"
-
 
 AssaultTerminator::AssaultTerminator()
 {

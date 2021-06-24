@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Squad.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/19 11:31:30 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/22 16:06:36 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 19:57:38 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ private:
     ISpaceMarine** n_th;
 public:
 	Squad();
-	~Squad();
+	virtual ~Squad();
 	Squad(Squad const &cpy);
 	Squad &operator=(Squad const &equal);
 

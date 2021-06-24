@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 11:10:51 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/23 13:31:45 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 19:33:16 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,10 @@ class AssaultTerminator : public ISpaceMarine
 {
 public:
     AssaultTerminator();
-    ~AssaultTerminator();
+    virtual ~AssaultTerminator();
     AssaultTerminator (AssaultTerminator const &cpy);
 	AssaultTerminator &operator=(AssaultTerminator const &equal);
 
-    //use Interface 
     ISpaceMarine *clone() const;
     void battleCry() const;
     void rangedAttack() const;

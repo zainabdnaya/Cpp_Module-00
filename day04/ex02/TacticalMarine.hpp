@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 21:25:40 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/23 13:13:49 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 19:31:34 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ private:
 
 public:
     TacticalMarine();
-    ~TacticalMarine();
+    virtual ~TacticalMarine();
     TacticalMarine(TacticalMarine const &cpy);
     TacticalMarine &operator=(TacticalMarine const &equal);
 

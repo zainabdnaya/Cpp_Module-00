@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 12:41:58 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 18:53:17 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 19:56:55 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,11 @@ TacticalMarine::TacticalMarine()
     std::cout << "Tactical Marine ready for battle!" << std::endl;
 }
 
-
 TacticalMarine::TacticalMarine(TacticalMarine const &cpy)
 {
     (void)cpy;
     std::cout << "Tactical Marine ready for battle!" << std::endl;
 }
-
 
 TacticalMarine &TacticalMarine::operator=(TacticalMarine const &equal)
 {
@@ -31,7 +29,6 @@ TacticalMarine &TacticalMarine::operator=(TacticalMarine const &equal)
         *this = equal;
     return(*this);
 }
-
 
 ISpaceMarine* TacticalMarine::clone() const {
   
@@ -53,7 +50,6 @@ void TacticalMarine::meleeAttack() const
 {
     std::cout << "* attacks with a chainswored*" << std::endl;
 }
-
 
 TacticalMarine::~TacticalMarine()
 {
