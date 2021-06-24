@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:08:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 15:12:54 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 15:42:04 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ PowerFist::PowerFist() : AWeapon("Power Fist", 50, 8)
 
 PowerFist::PowerFist(PowerFist const &cpy): AWeapon(cpy)
 {
+	if ( this != &cpy)
+		*this = cpy;
 }
 
 PowerFist &PowerFist::operator=(PowerFist const &equal)

@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:09:06 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 15:14:01 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 15:42:45 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ RadScorpion::RadScorpion() : Enemy(80, "RadScorpion")
 RadScorpion::RadScorpion(RadScorpion const &cpy)
 		: Enemy(cpy)
 {
+	if ( this != &cpy)
+		*this = cpy;
 }
 
 RadScorpion &RadScorpion::operator=(RadScorpion const &equal)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PlasmaRifle.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:08:09 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 01:02:25 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 15:41:39 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,11 @@ PlasmaRifle::PlasmaRifle() : AWeapon("Plasma Rifle", 21, 5)
 {
 }
 
-PlasmaRifle::PlasmaRifle(PlasmaRifle const &equal) :  AWeapon(equal)
+PlasmaRifle::PlasmaRifle(PlasmaRifle const &cpy) :  AWeapon(cpy)
 {
+	if ( this != &cpy)
+		*this = cpy;
 }
-
 void PlasmaRifle::attack() const
 {
     std::cout << "* piouuu piouuu piouuu *" << std::endl;

@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:00:58 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 15:02:15 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 15:49:17 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ public:
 	Character(std::string const &name);
 	Character(Character const &cpy);
 	Character &operator=(Character const &equal);
-	~Character();
+	virtual ~Character();
 	void recoverAP();
 	void equip(AWeapon *);
 	void attack(Enemy *);
