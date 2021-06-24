@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   TacticalMarine.cpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 12:41:58 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/22 16:46:40 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 18:53:17 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ TacticalMarine &TacticalMarine::operator=(TacticalMarine const &equal)
 
 ISpaceMarine* TacticalMarine::clone() const {
   
-  TacticalMarine*clone = new TacticalMarine(*this);
+  TacticalMarine *clone = new TacticalMarine(*this);
     return(clone);
 }
 

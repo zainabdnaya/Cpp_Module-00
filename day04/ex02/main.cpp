@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 21:38:35 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/22 16:32:20 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 19:04:14 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ int main()
         cur->rangedAttack();
         cur->meleeAttack();
     }
-    delete vlc;
+    // delete vlc;
     return 0;
 }
