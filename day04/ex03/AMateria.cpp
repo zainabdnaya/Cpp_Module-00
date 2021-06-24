@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 22:09:02 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/23 13:46:21 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 13:38:57 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ unsigned int		AMateria::getXP(void) const
 
 void				AMateria::use(ICharacter &target)
 {
-	_xp += 10;
+	_xp += 10; 
 	(void)target;
 }
 

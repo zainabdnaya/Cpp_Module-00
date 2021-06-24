@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 22:24:15 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/23 16:42:59 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 13:22:28 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,12 +66,11 @@ void    Character::unequip(int idx)
 
 void    Character::use(int idx, ICharacter& target)
 {
-    if ( idx > 0 && idx < _idx)
+    if ( idx >= 0 && idx < _idx && _idx > 0)
         _m[idx]->use(target);
 }
 
 Character::~Character(void)
 {
-    for(int i = 0; i < 4 ; i++)
-        delete _m[i];
+
 }

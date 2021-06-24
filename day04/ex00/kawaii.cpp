@@ -1,41 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Peon.cpp                                           :+:      :+:    :+:   */
+/*   kawaii.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/14 18:31:09 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 14:57:21 by zdnaya           ###   ########.fr       */
+/*   Created: 2021/06/24 14:56:22 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/06/24 14:58:52 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Peon.hpp"
 
-Peon::Peon(std::string name)
+#include "kawaii.hpp"
+
+kawaii::kawaii(std::string name)
 {
     this->name = name;
-    std::cout << "Some random Peon called " << name << " just appeared!" << std::endl;
-    std::cout << "Zog zog." << std::endl;
+    std::cout << "Some random kawaii called " << name << " just appeared!" << std::endl;
+    std::cout << "tok tok." << std::endl;
 }
 
-Peon::Peon(Peon const &cpy)
+kawaii::kawaii(kawaii const &cpy)
 {
     *this = cpy;
 }
 
-void Peon::getPolymorphed() const {
+void kawaii::getPolymorphed() const {
     std::cout << this->name << " has been turned into a pink pony!" << std::endl;
 }
 
-Peon &Peon::operator=(Peon const &equal)
+kawaii &kawaii::operator=(kawaii const &equal)
 {
     this->name = equal.name;
     return (*this);
 }
 
-Peon::~Peon()
+kawaii::~kawaii()
 {
-    std::cout << "Bleuark..." << std::endl;
+    std::cout << "bye bye..." << std::endl;
 }
-

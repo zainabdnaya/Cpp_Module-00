@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 22:07:03 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/23 13:45:19 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 13:48:28 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class ICharacter;
 
 class AMateria
 {
-	private:
+	protected:
 		std::string const	type; 
 		unsigned int 		_xp;
 	public:

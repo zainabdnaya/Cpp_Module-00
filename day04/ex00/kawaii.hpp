@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ICharacter.hpp                                     :+:      :+:    :+:   */
+/*   kawaii.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/22 22:26:00 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/24 13:19:21 by zdnaya           ###   ########.fr       */
+/*   Created: 2021/06/24 14:56:25 by zdnaya            #+#    #+#             */
+/*   Updated: 2021/06/24 14:58:00 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ICHARACTER_HPP
-#define ICHARACTER_HPP
+#ifndef KAWAII_HPP
+#define KAWAII_HPP
+#include <iostream>
+#include <string>
+#include <stdlib.h>
+#include <ctime>
+#include <iomanip> 
+#include "Victim.hpp"
 
-#include "AMateria.hpp"
 
-class AMateria;
-
-class ICharacter
+class kawaii : public Victim
 {
-private:
-	public : 
-	virtual ~ICharacter() {}
-	virtual std::string const &getName() const = 0;
-	virtual void equip(AMateria *m) = 0;
-	virtual void unequip(int idx) = 0;
-	virtual void use(int idx, ICharacter &target) = 0;
+public:
+    kawaii();
+    ~kawaii();
+    kawaii(std::string name);
+    kawaii(kawaii const &cpy);
+    kawaii &operator=(kawaii const &equal);
+    void getPolymorphed() const;
 };
 
 #endif

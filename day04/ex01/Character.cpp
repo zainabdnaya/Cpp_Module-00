@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:05:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 16:07:46 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 15:25:31 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,11 @@ std::string Character::message() const
     std::ostringstream str;
 
     if (weapon != nullptr)
-        str << name << " has " << ap << " and " << "wields a " << weapon->getName() << std::endl;
+        str << name << " has " << ap << " and "
+            << "wields a " << weapon->getName() << std::endl;
     else
-        str << name << " has " << ap << " and " << "is unarmed" << std::endl;
+        str << name << " has " << ap << " and "
+            << "is unarmed" << std::endl;
     return (str.str());
 }
 
@@ -72,22 +74,13 @@ void Character::recoverAP()
 void Character::attack(Enemy *enemy)
 {
     if (enemy == nullptr)
-    {
-        std::cout << "No Enemy Left" << std::endl;
         return;
-    }
     if (weapon == nullptr)
-    {
-        std::cout << "No Weapon Left" << std::endl;
         return;
-    }
     else
     {
         if (ap < weapon->getAPCost())
-        {
-            std::cout << "No ap Left" << std::endl;
             return;
-        }
         else
         {
             std::cout << name << " attacks " << enemy->getType() << " with a " << weapon->getName() << std::endl;

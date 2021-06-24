@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 15:19:11 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 09:44:55 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 14:16:10 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Sorcerer::Sorcerer(Sorcerer const &cpy)
 
 Sorcerer::~Sorcerer()
 {
-    std::cout << this->name << ", " << this->title << ", is dead. Consequences will never be the same !" << std::endl;
+    std::cout << this->name << ", " << this->title << ", is dead. Consequences will never be the same!" << std::endl;
 }
 
 void Sorcerer::polymorph(Victim const &vic) const

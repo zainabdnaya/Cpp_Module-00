@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PowerFist.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:08:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 01:06:05 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 15:12:54 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void PowerFist::attack() const
 {
 	std::cout << "* pschhh... SBAM! *" << std::endl;
 }
+
 PowerFist::~PowerFist()
 {
 }

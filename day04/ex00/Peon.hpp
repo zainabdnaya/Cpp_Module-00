@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 18:24:02 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 09:40:37 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 14:57:44 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,8 @@
 
 class Peon : public Victim
 {
-private:
-    Peon();
 public:
+    Peon();
     ~Peon();
     Peon(std::string name);
     Peon(Peon const &cpy);

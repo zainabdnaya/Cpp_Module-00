@@ -3,24 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:54:08 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/23 16:10:40 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 13:45:35 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 
-Cure::Cure()
+Cure::Cure() : AMateria("cure")
 {
-    name = "cure";
 }
 
-Cure    &Cure::operator=(Cure const &equal)
+Cure &Cure::operator=(Cure const &equal)
 {
-    name = equal.name;
-    return(*this);    
+        _xp = equal._xp ;
+    return (*this);
 }
 
 Cure::Cure(const Cure &cpy)
@@ -31,17 +30,16 @@ Cure::Cure(const Cure &cpy)
 AMateria *Cure::clone(void) const
 {
     // Cure *clone = new Cure (*this);
-    return  new Cure (*this);
-    // return(clone);  
+    return new Cure(*this);
+    // return(clone);
 }
 
-void 		Cure::use(ICharacter& target)
+void Cure::use(ICharacter &target)
 {
-    std::cout << "* shoots an ice bolt at "<< target.getName() << " *" << std::endl;
+    AMateria::use(target);
+    std::cout << "* heals " << target.getName() << "\'s wounds *" << std::endl;
 }
-
 
 Cure::~Cure()
 {
-    
 }

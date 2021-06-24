@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 20:38:01 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/23 13:44:03 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/24 13:22:24 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 
 class Cure : public AMateria
 {
-    private:
-        std::string name;        
     public :
     	Cure();
 		~Cure();

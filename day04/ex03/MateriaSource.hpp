@@ -13,14 +13,18 @@
 #ifndef MATERIASOURCE_HPP
 #define MATERIASOURCE_HPP
 #include "AMateria.hpp"
-
-class MateriaSource : public MateriaSource
+#include "IMateriaSource.hpp"
+class AMateria;
+class MateriaSource : public IMateriaSource
 {
 private:
     AMateria *A[4];
     int index;
 public:
     ~MateriaSource() {}
+    MateriaSource();
+    MateriaSource(MateriaSource const &cpy);
+    MateriaSource &operator=(MateriaSource const &equal);
     void learnMateria(AMateria  *m);
     AMateria *createMateria(std::string const &type);
 };

@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:03:04 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/16 18:35:56 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/24 15:14:31 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ class PowerFist : public AWeapon
 
     public:
         PowerFist();
-        ~PowerFist();
+        virtual ~PowerFist();
         PowerFist(PowerFist const &cpy);
         PowerFist &operator=(PowerFist const &equal);
-        void attack() const;
+        virtual void attack() const;
 };
 
 #endif
