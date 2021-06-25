@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Squad.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/19 11:31:30 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/24 19:57:38 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/25 18:09:10 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <string>
 #include "ISquad.hpp"
 #include "ISpaceMarine.hpp"
+
 
 class Squad : public ISquad
 {

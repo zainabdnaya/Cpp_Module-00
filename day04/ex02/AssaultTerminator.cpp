@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AssaultTerminator.cpp                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 21:38:19 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 19:58:56 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/25 18:07:44 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,5 @@ void AssaultTerminator::meleeAttack() const
 
 AssaultTerminator::~AssaultTerminator()
 {
-  std::cout << "I’ll be back..." << std::endl;
+  std::cout << "I'll be back..." << std::endl;
 }
