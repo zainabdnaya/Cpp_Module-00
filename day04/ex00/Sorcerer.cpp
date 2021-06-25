@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Sorcerer.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 15:19:11 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/25 19:15:52 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/25 21:03:59 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ void Sorcerer::polymorph(Victim const &vic) const
 {
     vic.getPolymorphed();
 }
-void Sorcerer::polymorph(Peon const &sorc) const
+void Sorcerer::polymorph(Peon const &peon) const
 {
-    sorc.getPolymorphed();
+    peon.getPolymorphed();
 }
 
 std::string const &Sorcerer::get_name(void) const 

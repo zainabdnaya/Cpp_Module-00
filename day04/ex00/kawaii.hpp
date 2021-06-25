@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/24 14:56:25 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 14:58:00 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/25 21:03:04 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class kawaii : public Victim
 {
 public:
     kawaii();
-    ~kawaii();
+    virtual ~kawaii();
     kawaii(std::string name);
     kawaii(kawaii const &cpy);
     kawaii &operator=(kawaii const &equal);
