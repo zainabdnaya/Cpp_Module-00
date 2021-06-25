@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Peon.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 18:24:02 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 14:57:44 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/25 19:16:00 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Peon : public Victim
 {
 public:
     Peon();
-    ~Peon();
+    virtual ~Peon();
     Peon(std::string name);
     Peon(Peon const &cpy);
     Peon &operator=(Peon const &equal);

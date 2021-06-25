@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PlasmaRifle.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:02:12 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/18 15:14:47 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/25 19:00:23 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@
 
 class PlasmaRifle : public AWeapon
 {
-    private:
-
     public:
         PlasmaRifle();
         virtual ~PlasmaRifle();

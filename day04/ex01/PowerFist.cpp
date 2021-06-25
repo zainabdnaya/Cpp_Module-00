@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   PowerFist.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:08:44 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 15:42:04 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/25 18:55:47 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PowerFist.hpp"
 
-PowerFist::PowerFist() : AWeapon("Power Fist", 50, 8)
+PowerFist::PowerFist() : AWeapon("Power Fist", 8, 50)
 {
 }
 

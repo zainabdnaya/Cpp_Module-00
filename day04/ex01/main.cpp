@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:00:34 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 15:18:38 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/25 19:29:14 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,23 @@ int main()
     std::cout << *me;
     me->attack(b);
     std::cout << *me;
+    me->recoverAP();
+    Character *_me = new Character("zainab");
+    Enemy *a = new RadScorpion();
+    std::cout << *_me;
+    _me->recoverAP();
+     _me->equip(pr);
+    std::cout << *_me;
+    _me->equip(pf);
+    _me->attack(a);
+    std::cout << *_me;
+    _me->equip(pr);
+    std::cout << *_me;
+    _me->attack(a);
+    std::cout << *_me;
+    _me->attack(a);
+    std::cout << *_me;
+    
+
     return 0;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 20:38:01 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/24 13:22:24 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/25 19:42:17 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ class Cure : public AMateria
 {
     public :
     	Cure();
-		~Cure();
+		virtual ~Cure();
 		Cure &operator=(Cure const &equal);
         Cure (const Cure &cpy);
 		AMateria* 	clone(void) const;

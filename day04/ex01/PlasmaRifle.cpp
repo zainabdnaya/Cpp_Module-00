@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   PlasmaRifle.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:08:09 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 15:41:39 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/25 19:00:34 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PlasmaRifle.hpp"
 
-PlasmaRifle::PlasmaRifle() : AWeapon("Plasma Rifle", 21, 5)
+PlasmaRifle::PlasmaRifle() : AWeapon("Plasma Rifle",5, 21)
 {
 }
 

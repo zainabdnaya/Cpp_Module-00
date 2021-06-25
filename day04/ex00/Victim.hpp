@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Victim.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 16:27:28 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/15 09:48:01 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/25 19:15:50 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Victim
         std::string name;
     public:
         Victim();
-        ~Victim();
+        virtual ~Victim();
         Victim(std::string name);
         Victim(Victim const &cpy);
         virtual void getPolymorphed() const;

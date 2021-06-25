@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 22:24:15 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/24 13:22:28 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/25 19:48:35 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ Character::Character(Character const &cpy)
 
 Character    &Character::operator=(Character const &equal)
 {
+    for(int i = 0;i < _idx ; i++)
+       delete _m[i];
     _name = equal._name;
     _idx = equal._idx;
     for(int i = 0;i < _idx ; i++)
