@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/18 17:27:29 by zdnaya            #+#    #+#             */
-/*   Updated: 2021/06/24 19:54:31 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/25 15:11:49 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,8 @@ int Squad::push(ISpaceMarine *unit)
         for(i = 0; i < count ; i++)
             tmp[i] = n_th[i];
         tmp[i] = unit;
-        for(i = 0; i < count ; i++)
-                delete n_th[i];
+        // for(i = 0; i < count ; i++)
+                // delete n_th[i];
         // delete[] n_th;
         n_th = tmp;
         count++;
