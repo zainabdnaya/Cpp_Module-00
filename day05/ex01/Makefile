@@ -2,12 +2,11 @@ NAME = ex00
 
 FLAGS = -Wall -Wextra -Werror 
 
-target = main.cpp \
-		Bureaucrat.cpp \
-		form.cpp\
+target = main.cpp\
+		 Bureaucrat.cpp\
+		 Form.cpp\
 			
-headers = Bureaucrat.hpp \
-		  Form.hpp \
+headers = Bureaucrat.hpp
 
 OBJS = $(target:.cpp=.o)
 
