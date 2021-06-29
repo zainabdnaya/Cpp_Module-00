@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/27 22:12:14 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 18:12:49 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 18:49:46 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ public:
 
     int getGrade() const;
     std::string const getName() const;
+    
     void incr_Grade();
     void decr_Grade();
 
