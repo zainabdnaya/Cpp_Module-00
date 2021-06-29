@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/27 22:12:14 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 18:12:49 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 21:38:30 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <stdexcept>
 #include "Form.hpp"
 
+class Form;
 class Bureaucrat
 {
 private:
@@ -28,12 +29,12 @@ public:
     virtual ~Bureaucrat();
     Bureaucrat(Bureaucrat const &bur);
     Bureaucrat &operator=(Bureaucrat const &equal);
-
     int getGrade() const;
     std::string const getName() const;
     void incr_Grade();
     void decr_Grade();
-
+    void signForm(Form &f);
+    
     void executeForm(Form const & form);
     class GradeTooHighException : public std::exception
     {
