@@ -4,7 +4,6 @@ FLAGS = -Wall -Wextra -Werror
 
 target = main.cpp \
 		Bureaucrat.cpp \
-		form.cpp\
 			
 headers = Bureaucrat.hpp \
 		  Form.hpp \

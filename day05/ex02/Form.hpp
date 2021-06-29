@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 20:39:09 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 17:37:10 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 15:27:39 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ public:
     Form(Form const &cpy);
     Form &operator=(Form const &equal);
 
-    std::string const getName();
-    //geters for all atr;
+    std::string const getName() const;
+    int const getExec() const;
     void BeSigned(Bureaucrat &bur);
     
     class GradeTooHighException : public std::exception
@@ -41,7 +41,10 @@ public:
     class GradeTooLowException : public std::exception
     {
         const char *what() const throw();
-    };    
+    };
+
+    virtual void Action() const = 0;
+    // void execute(Bureaucrat const &b) const;
 };
 
 std::ostream &operator<<(std::ostream &output, Form const &bureaucrat);

@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 12:33:07 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/28 23:23:20 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 10:21:39 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,7 @@ int main()
         b.incr_Grade();
         std::cout << b;
         std::cout << "******* AFTER From *********" << std::endl; 
-        Form f("f1",1,1);
-        f.BeSigned(a);
-        f.BeSigned(b);
+
     }
     catch(std::exception &e)
     {

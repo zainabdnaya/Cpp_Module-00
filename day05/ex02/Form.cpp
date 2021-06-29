@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 20:42:06 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/28 23:20:49 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 15:27:45 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,14 @@ const char *Form::GradeTooLowException::what() const throw()
     return "Grade Too Low Exception";
 }
 
-std::string const Form::getName()
+std::string const Form::getName() const
 {
     return (this->name);
+}
+
+int const  Form::getExec() const
+{
+    return(this->execution);
 }
 
 std::ostream &operator<<(std::ostream &output, Form const &form)
