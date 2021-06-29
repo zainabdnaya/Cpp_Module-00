@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/27 22:12:14 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 18:07:13 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 18:12:49 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ public:
     void incr_Grade();
     void decr_Grade();
 
+    void executeForm(Form const & form);
     class GradeTooHighException : public std::exception
     {
         virtual const char *what() const throw();
@@ -42,7 +43,6 @@ public:
     {
         virtual const char *what() const throw();
     };
-    void executeForm(Form const & form);
     class Failed_exec : public std::exception
     {
         virtual const char *what() const throw();

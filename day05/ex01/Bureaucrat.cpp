@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/27 22:12:09 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/28 13:28:18 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 18:29:39 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,13 @@ const char *Bureaucrat::GradeTooLowException::what() const throw()
     return "Grade Too Low";
 }
 
+void    Bureaucrat::signFrom(Form &f)
+{
+      if (getGrade() <  f.getSign())
+        std::cout << getName() << " signs " << f.getName();
+    else
+        std::cout << getName() << " can't sign " << f.getName() <<  "because garde too low" ;
+}
 
 std::ostream &operator<<(std::ostream &output, Bureaucrat const &bureaucrat)
 {

@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/27 22:12:14 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/28 20:52:53 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 18:26:43 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define BUREAUCRAT_HPP
 #include <iostream>
 #include <stdexcept>
+#include "Form.hpp"
 
 class Bureaucrat
 {
@@ -32,7 +33,7 @@ public:
     std::string const getName() const;
     void incr_Grade();
     void decr_Grade();
-
+    void signFrom(Form &f);
   class GradeTooHighException : public std::exception
     {
         virtual const char *what() const throw();

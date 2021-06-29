@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 20:39:09 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 17:37:10 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 18:34:09 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,9 @@ public:
     Form &operator=(Form const &equal);
 
     std::string const getName();
-    //geters for all atr;
+    int const getExec() const;
+    int const getSign() const;    
+    bool getsigne() const;
     void BeSigned(Bureaucrat &bur);
     
     class GradeTooHighException : public std::exception
