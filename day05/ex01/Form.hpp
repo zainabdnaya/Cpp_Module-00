@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 20:39:09 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 21:32:23 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/30 14:04:28 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ public:
     int  getExec() const;
     int  getSign() const;    
     bool getsigne() const;
+
     void BeSigned(Bureaucrat &bur);
     
     class GradeTooHighException : public std::exception

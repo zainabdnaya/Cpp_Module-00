@@ -1,11 +1,22 @@
-NAME = ex00
+NAME = ex03
 
 FLAGS = -Wall -Wextra -Werror 
 
 target = main.cpp \
 		Bureaucrat.cpp \
+		Form.cpp\
+		PresidentialPardonForm.cpp\
+		RobotomyRequestForm.cpp\
+		ShrubberyCreationForm.cpp\
+		Intern.cpp\
+
 			
 headers = Bureaucrat.hpp \
+		  Form.hpp \
+		  PresidentialPardonForm.hpp\
+		  RobotomyRequestForm.hpp\
+		  ShrubberyCreationForm.hpp\
+		  Intern.hpp\
 
 OBJS = $(target:.cpp=.o)
 
@@ -18,6 +29,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	@clang++ $(FLAGS) $(OBJS) -o $(NAME)
 	@echo "\n \x1b[31m Make works Succesfully!\n\x1b[0m"
+
 
 clean:
 	@rm -rf $(OBJS)

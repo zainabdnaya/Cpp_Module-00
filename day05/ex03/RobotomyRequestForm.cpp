@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/29 09:51:57 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/30 15:22:02 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/30 17:58:26 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ RobotomyRequestForm &RobotomyRequestForm::operator=(RobotomyRequestForm const &e
 
 const char *RobotomyRequestForm::Failed::what() const throw()
 {
-    return (" has  not been robotomized successfully.");
+    return (" has  not been robotomized successfully.\n");
 }
 
 
