@@ -16,7 +16,7 @@ all: $(NAME)
 %.o: %.cpp $(headers)
 	@clang++ $(FLAGS) -c $< -o $@
 
-
+ 
 $(NAME): $(OBJS)
 	@clang++ $(FLAGS) $(OBJS) -o $(NAME)
 	@echo "\n \x1b[31m Make works Succesfully!\n\x1b[0m"

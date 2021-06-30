@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/27 22:12:09 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 18:12:51 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 21:35:46 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,14 @@ const char *Bureaucrat::GradeTooHighException::what() const throw()
 const char *Bureaucrat::GradeTooLowException::what() const throw()
 {
     return "Grade Too Low";
+}
+
+void    Bureaucrat::signForm(Form &f)
+{
+      if (getGrade() <  f.getSign())
+        std::cout << getName() << " signs " << f.getName();
+    else
+        std::cout << getName() << " can't sign " << f.getName() <<  "because garde too low" ;
 }
 
 const char *Bureaucrat::Failed_exec::what() const throw()

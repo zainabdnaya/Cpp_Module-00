@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 20:42:06 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 15:27:45 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 21:51:11 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,17 +41,12 @@ Form &Form::operator=(Form const &equal)
     return (*this);
 }
 
-void Form::BeSigned(Bureaucrat &bur)
+void Form::Besigned(Bureaucrat &bur)
 {
-    if (signing < bur.getGrade())
-    {
-        std::cout << bur.getName() << " signs " << getName();
+    if (bur.getGrade() <= getSign())
         sign = true;
-    }
     else
-    {
-        std::cout << bur.getName() << " can't sign " << getName() <<  "because garde too low" ;
-    }
+       throw GradeTooLowException();
 }
 
 const char *Form::GradeTooHighException::what() const throw()
@@ -69,9 +64,18 @@ std::string const Form::getName() const
     return (this->name);
 }
 
-int const  Form::getExec() const
+int Form::getExec() const
 {
-    return(this->execution);
+    return (this->execution);
+}
+int  Form::getSign() const
+{
+    return (this->signing);
+}
+
+bool Form::getsigne() const
+{
+    return (this->sign);
 }
 
 std::ostream &operator<<(std::ostream &output, Form const &form)

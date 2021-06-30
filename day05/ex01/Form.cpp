@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 20:42:06 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 18:35:22 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/06/29 21:31:55 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,6 @@ Form::Form() : signing(0) , execution(0)
 
 }
 
-Form::~Form()
-{
-}
 
 Form::Form(std::string const name, int const signing, int const execution) : name(name), signing(signing), execution(execution)
 {
@@ -59,16 +56,16 @@ const char *Form::GradeTooLowException::what() const throw()
     return "Grade Too Low Exception";
 }
 
-std::string const Form::getName()
+std::string const Form::getName() const
 {
     return (this->name);
 }
 
-int const Form::getExec() const
+int  Form::getExec() const
 {
     return (this->execution);
 }
-int const Form::getSign() const
+int  Form::getSign() const
 {
     return (this->signing);
 }
@@ -83,4 +80,8 @@ std::ostream &operator<<(std::ostream &output, Form const &form)
     (void)(form);
     output << "Let's sign the Form" ;
     return output;
+}
+
+Form::~Form()
+{
 }
