@@ -3,10 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   Form.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 20:39:09 by zainabdnaya       #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2021/06/30 14:04:28 by zainabdnaya      ###   ########.fr       */
+=======
+/*   Updated: 2021/06/30 20:09:30 by zdnaya           ###   ########.fr       */
+>>>>>>> b8be971bd585b115abc2dc2afd501df1f45510fa
 /*                                                                            */
 /* ************************************************************************** */
 

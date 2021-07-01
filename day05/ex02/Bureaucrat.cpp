@@ -3,10 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/27 22:12:09 by zainabdnaya       #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2021/06/30 15:21:00 by zainabdnaya      ###   ########.fr       */
+=======
+/*   Updated: 2021/06/30 20:10:25 by zdnaya           ###   ########.fr       */
+>>>>>>> b8be971bd585b115abc2dc2afd501df1f45510fa
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,10 +104,17 @@ void    Bureaucrat::executeForm(Form const &form)
 {
     try
     {
+<<<<<<< HEAD
     if ( grade > form.getExec())
         throw Failed_exec();
     else
         std::cout << getName() << " executes " << form.getName() << std::endl;
+=======
+        if ( grade > form.getExec())
+            throw Failed_exec();
+        else
+            std::cout << getName() << " executes " << form.getName() << std::endl;
+>>>>>>> b8be971bd585b115abc2dc2afd501df1f45510fa
     }
     catch (std::exception &e)
     {
