@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/27 22:12:09 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 21:35:46 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/30 20:10:25 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,14 @@ Bureaucrat::Bureaucrat(Bureaucrat const &bur): name(bur.name)
 
 Bureaucrat  &Bureaucrat::operator=(Bureaucrat const &equal)
 {
-    grade = equal.grade;
+    if  (this != &equal)
+    {
+        grade = equal.grade;
     if (grade > 150)
         throw(GradeTooLowException());
     if (grade < 1)
         throw(GradeTooHighException());
+    }
     return(*this);
 }
 
@@ -71,25 +74,25 @@ void  Bureaucrat::incr_Grade()
 
 const char *Bureaucrat::GradeTooHighException::what() const throw()
 {
-    return "Grade Too High";
+    return "Grade Too High\n";
 }
 
 const char *Bureaucrat::GradeTooLowException::what() const throw()
 {
-    return "Grade Too Low";
+    return "Grade Too Low\n";
 }
 
 void    Bureaucrat::signForm(Form &f)
 {
-      if (getGrade() <  f.getSign())
-        std::cout << getName() << " signs " << f.getName();
+      if (getGrade() <=  f.getSign())
+        std::cout << getName() << " signs " << f.getName() << std::endl;
     else
-        std::cout << getName() << " can't sign " << f.getName() <<  "because garde too low" ;
+        std::cout << getName() << " can't sign " << f.getName() <<  " because garde too low." << std::endl;
 }
 
 const char *Bureaucrat::Failed_exec::what() const throw()
-{
-    return "The Bureaucrat Failed to execute ";
+{ 
+    return "The Bureaucrat Failed to execute\n";
 }
 
 
@@ -97,10 +100,10 @@ void    Bureaucrat::executeForm(Form const &form)
 {
     try
     {
-    if ( grade > form.getExec())
-        throw Failed_exec();
-    else
-        std::cout << getName() << " executes " << form.getName();
+        if ( grade > form.getExec())
+            throw Failed_exec();
+        else
+            std::cout << getName() << " executes " << form.getName() << std::endl;
     }
     catch (std::exception &e)
     {

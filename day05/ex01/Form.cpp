@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 20:42:06 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 21:31:55 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/30 13:51:17 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 Form::Form() : signing(0) , execution(0)
 {
-
 }
-
 
 Form::Form(std::string const name, int const signing, int const execution) : name(name), signing(signing), execution(execution)
 {
@@ -34,7 +32,8 @@ Form::Form(Form const &cpy) : name(cpy.name) , signing(cpy.signing)  , execution
 
 Form &Form::operator=(Form const &equal)
 {
-    sign = equal.sign;
+    if ( this != &equal)
+     sign = equal.sign;
     return (*this);
 }
 
@@ -77,8 +76,10 @@ bool Form::getsigne() const
 
 std::ostream &operator<<(std::ostream &output, Form const &form)
 {
-    (void)(form);
-    output << "Let's sign the Form" ;
+    if ( form.getsigne() == true)
+        output << "The bereaucrat can  sign  " << form.getName()  << std::endl;
+    else
+        output << "The bereaucrat can't sign " << form.getName() << std::endl;
     return output;
 }
 

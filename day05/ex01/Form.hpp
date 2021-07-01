@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 20:39:09 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/29 21:32:23 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/06/30 20:09:30 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ public:
     int  getExec() const;
     int  getSign() const;    
     bool getsigne() const;
+
     void BeSigned(Bureaucrat &bur);
     
     class GradeTooHighException : public std::exception
