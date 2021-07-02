@@ -3,17 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Intern.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-<<<<<<< HEAD
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/30 15:46:13 by zainabdnaya       #+#    #+#             */
 /*   Updated: 2021/06/30 17:49:33 by zainabdnaya      ###   ########.fr       */
-=======
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/30 15:46:13 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/06/30 19:31:41 by zdnaya           ###   ########.fr       */
->>>>>>> b8be971bd585b115abc2dc2afd501df1f45510fa
 /*                                                                            */
 /* ************************************************************************** */
 
