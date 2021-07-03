@@ -1,8 +1,9 @@
 NAME = convert
 
-FLAGS = -Wall -Wextra -Werror 
+# FLAGS = -Wall -Wextra -Werror 
 
 target = convert.cpp\
+		tools.cpp\
 			
 headers = convert.hpp\
 

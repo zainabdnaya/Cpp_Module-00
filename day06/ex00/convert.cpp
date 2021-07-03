@@ -3,65 +3,92 @@
 /*                                                        :::      ::::::::   */
 /*   convert.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
+/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 01:58:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/07/02 11:14:11 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/07/03 12:16:16 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "convert.hpp"
 
+// Convert::Convert()
+// {
+// 	this->val = "" ;
+// 	this->V_char = '\0';
+// 	this->V_int = 0;
+// 	this->V_float = 0.0f;
+// 	this->V_double = 0.0;
+// }
 Convert::Convert(std::string str)
 {
-    this->val = str;
-    
-    double cnv = std::stod(this->val);
-    std::cout << "char: ";
-	    Conver._char(cnv);
-    std::cout << "int: ";
-	    Convert._int(cnv);
-    std::cout << "float: ";
-	    Convert._float(cnv);
-	std::cout << "double: ";
-	    Convert._double(cnv);
-    
-}
-
-void	Convert::_char(double cnv)
-{
-    if (std::isnan(cnv))
-		std::cout << "impossible\n" ;
+	val = str;
+	bool b = Convert::type(val);
+	if (b == true)
+	{
+		std::cout << "hello!";
+	}
 	else
-		std::cout << static_cast<char>(cnv)) << std::endl;
+	{
+		std::string str = "Impossible\n";
+		print_h(str);
+		print_i(str);
+		print_f(str);
+		print_d(str);
+	}
 }
 
- void	Convert::_int(double cnv)
+bool Convert::type(std::string str)
 {
-    if (std::isnan(cnv))
-		std::cout << "impossible\n" ;
+	if (str.length() == 1 && isalpha(str[0]) == 1)
+	{
+		std::cout << "1";
+
+		// V_char = str[0];
+		// V_int = static_cast<int>(this->V_char);
+		// V_float = static_cast<float>(this->V_char);
+		// V_double = static_cast<double>(this->V_char);
+		return (true);
+	}
+	else if (Convert::_I_type(str) == 1)
+	{
+		std::cout << "2";
+
+		// V_int = std::stoi(str);
+		// V_char = static_cast<char>(this->V_int);
+		// V_float = static_cast<float>(this->V_int);
+		// V_double = static_cast<double>(this->V_int);
+		return (true);
+	}
+	else if (Convert::_F_type(str) == 1 || Convert::_F_pseudo(str) == 1)
+	{
+		std::cout << "3";
+		// V_float = std::stof(str);
+		// V_int = static_cast<int>(this->V_float);
+		// V_char = static_cast<char>(this->V_float);
+		// V_double = static_cast<double>(this->V_float);
+		return (true);
+	}
+	else if (Convert::_D_type(str) == 1 || Convert::_D_pseudo(str) == 1)
+	{
+		std::cout << "4";
+		// V_double = std::stod(str);
+		// V_int = static_cast<int>(this->V_double);
+		// V_char = static_cast<char>(this->V_double);
+		// V_float = static_cast<double>(this->V_double);
+		return (true);
+	}
 	else
-		std::cout << static_cast<int>(cnv)) << std::endl;
+		return (false);
 }
-
-
- void	Convert::_float(double cnv)
-{
-    if (std::isnan(cnv))
-		std::cout << "impossible\n" ;
-	else
-		std::cout << static_cast<float>(cnv)) << std::endl;
-}
-
- void	Convert::_float(double cnv)
-{
-
-	std::cout << cnv << std::endl;
-}
-
-int	 main(int ac, char **av)
+int main(int ac, char **av)
 {
 	if (ac == 2)
-		Convert convert(av[1]);
+	{
+		Convert Convert(av[1]);
+	}
+	else if (ac < 2 || ac > 2)
+		std::cout << BOLDRED << "You can only put 2 argument!\n"
+				  << RESET;
 	return (0);
 }
