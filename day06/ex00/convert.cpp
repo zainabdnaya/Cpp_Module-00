@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   convert.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 01:58:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/07/03 12:16:16 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/07/03 13:00:27 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ Convert::Convert(std::string str)
 
 bool Convert::type(std::string str)
 {
-	if (str.length() == 1 && isalpha(str[0]) == 1)
+	if (str.length() == 1 && !isdigit(str[0]))
 	{
 		std::cout << "1";
 
