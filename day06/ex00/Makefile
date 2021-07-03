@@ -4,6 +4,7 @@ NAME = convert
 
 target = convert.cpp\
 		tools.cpp\
+		main.cpp\
 			
 headers = convert.hpp\
 

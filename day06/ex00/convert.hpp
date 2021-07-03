@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 01:11:57 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/07/03 16:42:27 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/07/03 18:14:17 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@
 
 #define print_h(X) (std::cout  <<  " char  : " << "'" << X << "'" << std::endl)
 #define print_i(X) (std::cout  <<  " int   : " << X << std::endl)
-#define non_disp() (std::cout  <<  " char  : Non dispalyabe"  << std::endl)
-#define imposs() (std::cout    <<  " char  : Impossible"  << std::endl)
+#define non_disp() (std::cout  << BOLDRED <<  " char  : Non dispalyabe"   << RESET<< std::endl)
+#define imposs()   (std::cout  << BOLDRED <<  " char  : Impossible"       << RESET<< std::endl)
 #define print_f(X) (std::cout << std::fixed << std::setprecision(2)  <<  " float : " << X <<  "f" << std::endl)
 #define fimpossible(X) (std::cout << std::fixed << std::setprecision(2)  <<  " float : " << "impossible" <<  "" << std::endl)
 #define print_d(X) (std::cout << std::fixed << std::setprecision(2)  <<  " double: " << X << std::endl)
@@ -49,11 +49,12 @@ private:
     float   V_float;
     double  V_double;
 public:
-    // Convert();
+    Convert();
     Convert(std::string str);
-    // Convert(Convert const &cpy);
-    // Convert &operator=(Convert const &equal);
-    // virtual ~Convert();
+    Convert(Convert const &cpy);
+    Convert &operator=(Convert const &equal);
+    virtual ~Convert();
+
     bool type(std::string str);
 
     int _F_pseudo(std::string str);
@@ -70,5 +71,5 @@ public:
 
 };
 
-// void    print_all(char c, int i , float f, double d);
+
 #endif

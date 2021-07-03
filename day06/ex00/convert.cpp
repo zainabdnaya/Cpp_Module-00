@@ -6,21 +6,25 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 01:58:51 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/07/03 16:44:16 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/07/03 18:13:53 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "convert.hpp"
 
-// Convert::Convert()
-// {
-// 	this->val = "" ;
-// 	this->V_char = '\0';
-// 	this->V_int = 0;
-// 	this->V_float = 0.0f;
-// 	this->V_double = 0.0;
-// }
+Convert::Convert()
+{
+	this->val = "" ;
+	this->V_char = '\0';
+	this->V_int = 0;
+	this->V_float = 0.0f;
+	this->V_double = 0.0;
+}
 
+Convert::~Convert()
+{
+	
+}
 Convert::Convert(std::string str)
 {
 	val = str;
@@ -88,22 +92,4 @@ bool Convert::type(std::string str)
 	}
 	else
 		return (false);
-}
-int main(int ac, char **av)
-{
-	if (ac == 2)
-	{
-		try
-		{
-			Convert Convert(av[1]);
-		}
-		catch (const std::exception &e)
-		{
-			std::cerr << e.what() << '\n';
-		}
-	}
-	else if (ac < 2 || ac > 2)
-		std::cout << BOLDRED << "You can only put 2 argument!\n"
-				  << RESET;
-	return (0);
 }
