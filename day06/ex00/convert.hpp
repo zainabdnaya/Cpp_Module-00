@@ -6,7 +6,7 @@
 /*   By: zdnaya <zdnaya@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 01:11:57 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/07/03 12:06:01 by zdnaya           ###   ########.fr       */
+/*   Updated: 2021/07/03 16:42:27 by zdnaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,15 @@
 #define BOLDMAGENTA "\033[1m\033[35m"
 #define BOLDWHITE "\033[1m\033[37m"
 
-#define print_h(X) (std::cout  <<  " char  : " << X << std::endl)
+#define print_h(X) (std::cout  <<  " char  : " << "'" << X << "'" << std::endl)
 #define print_i(X) (std::cout  <<  " int   : " << X << std::endl)
-#define print_f(X) (std::cout  <<  " float : " << X << std::endl)
-#define print_d(X) (std::cout  <<  " double: " << X << std::endl)
+#define non_disp() (std::cout  <<  " char  : Non dispalyabe"  << std::endl)
+#define imposs() (std::cout    <<  " char  : Impossible"  << std::endl)
+#define print_f(X) (std::cout << std::fixed << std::setprecision(2)  <<  " float : " << X <<  "f" << std::endl)
+#define fimpossible(X) (std::cout << std::fixed << std::setprecision(2)  <<  " float : " << "impossible" <<  "" << std::endl)
+#define print_d(X) (std::cout << std::fixed << std::setprecision(2)  <<  " double: " << X << std::endl)
+
+
 
 
 class Convert
@@ -40,7 +45,7 @@ class Convert
 private:
     std::string val;
     char    V_char;
-    int     V_int;
+    long  int     V_int;
     float   V_float;
     double  V_double;
 public:
