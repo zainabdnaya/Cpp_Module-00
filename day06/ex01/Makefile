@@ -1,12 +1,10 @@
-NAME = convert
+NAME = serialisation
 
 FLAGS = -Wall -Wextra -Werror 
 
-target = convert.cpp\
-		tools.cpp\
-		main.cpp\
+target = main.cpp\
 			
-headers = convert.hpp\
+headers = ser.hpp\
 
 OBJS = $(target:.cpp=.o)
 

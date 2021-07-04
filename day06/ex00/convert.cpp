@@ -14,17 +14,35 @@
 
 Convert::Convert()
 {
-	this->val = "" ;
+	this->val = "";
 	this->V_char = '\0';
 	this->V_int = 0;
 	this->V_float = 0.0f;
 	this->V_double = 0.0;
 }
 
-Convert::~Convert()
+Convert::Convert(Convert const &cpy)
 {
-	
+	this->val = cpy.val;
+	this->V_char = cpy.V_char;
+	this->V_int = cpy.V_int;
+	this->V_float = cpy.V_float;
+	this->V_double = cpy.V_double;
 }
+
+Convert &Convert::operator=(Convert const &equal)
+{
+	if (this != &equal)
+	{
+		this->val 		= equal.val;
+		this->V_char 	= equal.V_char;
+		this->V_int 	= equal.V_int;
+		this->V_float 	= equal.V_float;
+		this->V_double  = equal.V_double;
+	}
+	return (*this);
+}
+
 Convert::Convert(std::string str)
 {
 	val = str;
@@ -39,7 +57,7 @@ Convert::Convert(std::string str)
 		}
 		else if (!isprint(V_char))
 			non_disp();
-		if (_F_pseudo(str) || _D_pseudo(str) || INT_MAX < V_int || INT_MIN  > V_int)
+		if (_F_pseudo(str) || _D_pseudo(str) || INT_MAX < V_int || INT_MIN > V_int)
 			print_i("Impossible");
 		else
 			print_i(V_int);
@@ -92,4 +110,8 @@ bool Convert::type(std::string str)
 	}
 	else
 		return (false);
+}
+
+Convert::~Convert()
+{
 }

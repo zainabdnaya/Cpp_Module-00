@@ -1,12 +1,10 @@
-NAME = convert
+NAME = identify
 
 FLAGS = -Wall -Wextra -Werror 
 
-target = convert.cpp\
-		tools.cpp\
-		main.cpp\
+target = main.cpp\
 			
-headers = convert.hpp\
+headers = class.hpp\
 
 OBJS = $(target:.cpp=.o)
 

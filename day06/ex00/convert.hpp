@@ -21,13 +21,7 @@
 #include <algorithm>
 
 #define RESET "\033[0m"
-#define BLUE "\033[34m" 
 #define BOLDRED "\033[1m\033[31m"     
-#define BOLDYELLOW "\033[1m\033[33m"
-#define BOLDGREEN "\033[1m\033[32m"
-#define BOLDBLUE "\033[1m\033[34m"
-#define BOLDMAGENTA "\033[1m\033[35m"
-#define BOLDWHITE "\033[1m\033[37m"
 
 #define print_h(X) (std::cout  <<  " char  : " << "'" << X << "'" << std::endl)
 #define print_i(X) (std::cout  <<  " int   : " << X << std::endl)
@@ -36,9 +30,6 @@
 #define print_f(X) (std::cout << std::fixed << std::setprecision(2)  <<  " float : " << X <<  "f" << std::endl)
 #define fimpossible(X) (std::cout << std::fixed << std::setprecision(2)  <<  " float : " << "impossible" <<  "" << std::endl)
 #define print_d(X) (std::cout << std::fixed << std::setprecision(2)  <<  " double: " << X << std::endl)
-
-
-
 
 class Convert
 {

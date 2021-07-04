@@ -18,6 +18,7 @@ int Convert::_D_type(std::string str)
     int d;
 
     i = 0;
+    d = 0;
     if (str[i] == '-' || str[i] == '+')
         i++;
     while (i < (int)str.length())
@@ -70,10 +71,13 @@ int Convert::_F_type(std::string str)
 int Convert::_I_type(std::string str)
 {
     int i;
+    int l;
+
+    l =  str.length();
     i = 0;
     if (str[i] == '-' || str[i] == '+')
         i++;
-    while (i < str.length())
+    while (i < l)
     {
         if (isdigit(str[i]) == 0)
             return (0);
