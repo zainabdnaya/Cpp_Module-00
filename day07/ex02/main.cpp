@@ -6,7 +6,7 @@
 /*   By: zainabdnayagmail.com <zainabdnayagmail.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/05 13:00:19 by zainabdnaya       #+#    #+#             */
-/*   Updated: 2021/07/05 16:09:27 by zainabdnaya      ###   ########.fr       */
+/*   Updated: 2021/07/05 18:52:40 by zainabdnaya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int main(int, char **)
     {
         std::cout << numbers[25] << std::endl;
         std::cout << test[25] << std::endl;
+        numbers[-2];
     }
     catch (const std::exception &e)
     {
