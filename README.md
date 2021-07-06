@@ -14,6 +14,12 @@
 <a href="https://cdn.intra.42.fr/pdf/pdf/21412/en.subject.pdf">Day04</a>
 <br> 
 <a href="https://cdn.intra.42.fr/pdf/pdf/25936/en.subject.pdf">Day05</a>
+<br> 
+<a href="https://cdn.intra.42.fr/pdf/pdf/25812/en.subject.pdf">Day06</a>
+<br> 
+<a href="https://cdn.intra.42.fr/pdf/pdf/25823/en.subject.pdf">Day07</a>
+<br> 
+<a href="https://cdn.intra.42.fr/pdf/pdf/25939/en.subject.pdf">Day08</a>
 
 # Ressources
 
