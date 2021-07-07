@@ -33,7 +33,7 @@ int main()
     --it;
     while (it != ite)
     {
-        std::cout << "elemets are: " << *it << std::endl;
+        std::cout << "The Elemets are: " << *it << std::endl;
         ++it;
     }
     std::stack<int> s(mstack);

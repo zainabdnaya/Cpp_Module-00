@@ -36,14 +36,15 @@ public:
     int shortestSpan();
     int longestSpan();
 
-    class ErrorReplica : public std::exception
-    {
-        virtual const char *what() const throw();
-    };
     class ErrorException : public std::exception
     {
         virtual const char *what() const throw();
     };
+    // case you add  the replicat
+    // class ErrorReplica : public std::exception
+    // {
+    //     virtual const char *what() const throw();
+    // };
 };
 
 #endif

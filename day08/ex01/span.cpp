@@ -35,15 +35,16 @@ void Span::addNumber(int nbr)
 {
     if (this->vec.size() < n)
     {
-        for (unsigned int j = 0; j < this->vec.size(); j++)
-        {
-            if (nbr == this->vec.at(j))
-                {
-                    throw ErrorReplica();
-                    return;
-                }
-        }
         this->vec.push_back(nbr);
+        // in case of replicat
+        // for (unsigned int j = 0; j < this->vec.size(); j++)
+        // {
+        //     if (nbr == this->vec.at(j))
+        //         {
+        //             throw ErrorReplica();
+        //             return;
+        //         }
+        // }
     }
     else
         throw ErrorException();
