@@ -10,24 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "easyfind.hpp"
-
 
 int main()
 {
     std::vector<int> numbers;
-    
- 	for (int i = 1; i <= 10; i++)
-		numbers.push_back(i);
+
+    for (int i = 1; i <= 10; i++)
+        numbers.push_back(i);
 
     try
     {
-        easyfind(numbers,11);
+        easyfind(numbers, 5);
+        easyfind(numbers, 11);
     }
-    catch(std::exception)
+    catch (std::exception)
     {
         std::cout << "Error: The wanted element does not exist!" << std::endl;
     }
-    
 }
